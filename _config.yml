@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: NII Computational Linguistics Lab
+first_name:
+middle_name:
+last_name:
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to reach out by email for inquiries about research or joining the lab.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Computational Linguistics Laboratory at the National Institute of Informatics (NII), Tokyo, Japan.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
