@@ -8,18 +8,19 @@ nav_order: 1
 ---
 
 <!-- _pages/people.md -->
-<!-- TODO: render members from _data/members.yml grouped by role -->
+<!-- Member data is managed in _members/*.md files. -->
 
-## Principal Investigator
+{% assign positions = "Principal Investigator,Researchers,Graduate Students,Research Assistants,Interns,Collaborators,Administrative Staff" | split: "," %}
 
-## Researchers
+{% for pos in positions %}
+  {% assign members_in_pos = site.members | where: "position", pos %}
+  {% if members_in_pos.size > 0 %}
 
-## Graduate Students
+## {{ pos }}
 
-## Research Assistants
+    {% for member in members_in_pos %}
+      {% include member_info.liquid member=member %}
+    {% endfor %}
 
-## Interns
-
-## Collaborators
-
-## Administrative Staff
+  {% endif %}
+{% endfor %}
