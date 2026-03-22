@@ -412,6 +412,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "members-sato-ichiro",
+          title: 'Sato Ichiro',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/sato-ichiro/";
+            },},{id: "members-suzuki-hanako",
+          title: 'Suzuki Hanako',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/suzuki-hanako/";
+            },},{id: "members-yamada-taro",
+          title: 'Yamada Taro',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/yamada-taro/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
