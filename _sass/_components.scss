@@ -259,3 +259,23 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// People page
+
+.member_info {
+  margin-bottom: 1.2rem;
+
+  .member_name {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+
+  .member_institute,
+  .member_position,
+  .member_field {
+    display: block;
+    font-size: 0.95rem;
+  }
+}

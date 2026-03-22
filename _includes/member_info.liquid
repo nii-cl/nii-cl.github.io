@@ -1,12 +1,12 @@
 <div class="member_info">
-  <span class="member_name">
+  <div class="member_name">
     {% if member.website %}
       <a href="{{ member.website }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>
     {% else %}
       {{ member.name }}
     {% endif %}
-  </span>
-  <span class="member_institute">{{ member.institute }}</span>
-  <span class="member_position">{{ member.position }}</span>
-  <span class="member_field">{{ member.field }}</span>
+  </div>
+  <div class="member_institute">{{ member.institute }}</div>
+  <div class="member_position">{{ member.position }}</div>
+  <div class="member_field">{{ member.field }}</div>
 </div>
