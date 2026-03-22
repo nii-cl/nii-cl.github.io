@@ -10,7 +10,7 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-people",
-          title: "people",
+          title: "People",
           description: "Members of the NII Computational Linguistics Lab.",
           section: "Navigation",
           handler: () => {
@@ -412,11 +412,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "members-sato-ichiro",
-          title: 'Sato Ichiro',
+            },},{id: "members-saku-sugawara",
+          title: 'Saku Sugawara',
           description: "",
           section: "Members",handler: () => {
-              window.location.href = "/members/sato-ichiro/";
+              window.location.href = "/members/saku-sugawara/";
             },},{id: "members-suzuki-hanako",
           title: 'Suzuki Hanako',
           description: "",
