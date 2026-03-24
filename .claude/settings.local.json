@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(grep -E \"^\\(nav|nav_order|permalink|title\\):\" /Users/sen/Desktop/nii/github/website/_pages/*.md)"
+    ]
+  }
+}
