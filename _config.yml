@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: NII Computational Linguistics Lab
+title: Sugawara Lab at National Institute of Informatics
 first_name:
 middle_name:
 last_name:
 contact_note: >
   Feel free to reach out by email for inquiries about research or joining the lab.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Computational Linguistics Laboratory at the National Institute of Informatics (NII), Tokyo, Japan.
+  Sugawara Lab at National Institute of Informatics, Tokyo, Japan.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

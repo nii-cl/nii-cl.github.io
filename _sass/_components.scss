@@ -273,9 +273,13 @@ ul.task-list input[type="checkbox"] {
   }
 
   .member_institute,
-  .member_position,
-  .member_field {
+  .member_position {
     display: block;
     font-size: 0.95rem;
   }
+}
+
+.section-note {
+  font-size: 0.67em;
+  font-weight: normal;
 }

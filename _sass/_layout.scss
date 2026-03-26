@@ -20,8 +20,14 @@ body {
 }
 
 body.fixed-top-nav {
-  // Add some padding for the nav-bar.
-  padding-top: 57px;
+  // Reserve space for the two-row fixed header to avoid layout shift on page load.
+  padding-top: 104px;
+}
+
+@media (max-width: 575.98px) {
+  body.fixed-top-nav {
+    padding-top: 88px;
+  }
 }
 
 body.sticky-bottom-footer {

@@ -6,7 +6,9 @@
       {{ member.name }}
     {% endif %}
   </div>
-  <div class="member_institute">{{ member.institute }}</div>
-  <div class="member_position">{{ member.position }}</div>
-  <div class="member_field">{{ member.field }}</div>
+  {% if member.position and member.position != "" %}
+    <div class="member_position">{{ member.position }}</div>
+  {% elsif member.institute and member.institute != "" %}
+    <div class="member_institute">{{ member.institute }}</div>
+  {% endif %}
 </div>

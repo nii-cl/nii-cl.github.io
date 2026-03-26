@@ -1,8 +1,9 @@
 ---
 layout: about
 title: home
+about_title: Sugawara Lab
+compact_title: true
 permalink: /
-subtitle: <a href="https://www.nii.ac.jp/en/">National Institute of Informatics</a>, Tokyo, Japan.
 
 profile:
   align: right
@@ -25,7 +26,6 @@ latest_posts:
   enabled: false
 ---
 
-Welcome to the Computational Linguistics Laboratory at the National Institute of Informatics (NII), Tokyo, Japan.
-Our research focuses on natural language processing and computational linguistics, including reading comprehension, question answering, and the evaluation of language understanding in both humans and machines.
+Our group is based at National Institute of Informatics in Tokyo, Japan, working on natural language processing and computational linguistics. Our research includes reading comprehension, question answering, and the evaluation of language understanding in both humans and machines.
 
 **Principal Investigator:** [Saku Sugawara](https://penzant.net/) (Assistant Professor, NII)

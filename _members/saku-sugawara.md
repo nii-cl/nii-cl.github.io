@@ -1,7 +1,8 @@
 ---
-name: "Saku Sugawara"
-institute: "SOKENDAI (The Graduate University for Advanced Studies)"
-position: "Graduate Students"
-field: "Discourse Analysis, Dialogue Systems"
+name: "Saku Sugawara / 菅原 朔"
+# institute: "NII"
+position: "Assistant Professor"
+field: "Natural Language Processing, Computational Linguistics"
 website: "https://penzant.net/"
+role: "faculty"
 ---

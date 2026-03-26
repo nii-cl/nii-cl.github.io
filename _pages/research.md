@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: research
-description: Research themes of the NII Computational Linguistics Lab.
+description: Research themes of Sugawara Lab at National Institute of Informatics.
 nav: true
 nav_order: 3
 ---

@@ -118,7 +118,7 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  transition: all 750ms !important;
+  transition: none !important;
   transition-delay: 0 !important;
 }
 
