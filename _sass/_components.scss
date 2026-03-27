@@ -266,10 +266,29 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 1.2rem;
 
   .member_name {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.2rem;
+  }
+
+  .member_link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--global-theme-color);
+    font-size: 0.92rem;
+    line-height: 1;
+    opacity: 0.85;
+    transform: translateY(-0.02em);
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: none;
+      opacity: 1;
+    }
   }
 
   .member_institute,

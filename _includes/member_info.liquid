@@ -1,9 +1,10 @@
 <div class="member_info">
   <div class="member_name">
+    <span>{{ member.name }}</span>
     {% if member.website %}
-      <a href="{{ member.website }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>
-    {% else %}
-      {{ member.name }}
+      <a class="member_link" href="{{ member.website }}" target="_blank" rel="noopener noreferrer" aria-label="Website of {{ member.name }}">
+        <i class="fa-solid fa-link"></i>
+      </a>
     {% endif %}
   </div>
   {% if member.position and member.position != "" %}
