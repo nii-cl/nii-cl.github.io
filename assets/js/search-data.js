@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-people",
           title: "People",
-          description: "Members of the NII Computational Linguistics Lab.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "research",
-          description: "Research themes of the NII Computational Linguistics Lab.",
+          description: "Research themes of Sugawara Lab at National Institute of Informatics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-join",
           title: "join",
-          description: "Information for prospective members of the NII Computational Linguistics Lab.",
+          description: "Information for prospective members of Sugawara Lab at National Institute of Informatics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/join/";
@@ -412,21 +412,116 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "members-akari-haga",
+          title: 'Akari Haga',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/akari-haga/";
+            },},{id: "members-akira-kawabata",
+          title: 'Akira Kawabata',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/akira-kawabata/";
+            },},{id: "members-alessandro-picardi",
+          title: 'Alessandro Picardi',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/alessandro-picardi/";
+            },},{id: "members-daiki-asami",
+          title: 'Daiki Asami',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/daiki-asami/";
+            },},{id: "members-haruto-suzuki",
+          title: 'Haruto Suzuki',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/haruto-suzuki/";
+            },},{id: "members-junko-inose",
+          title: 'Junko Inose',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/junko-inose/";
+            },},{id: "members-kazuma-kimura",
+          title: 'Kazuma Kimura',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/kazuma-kimura/";
+            },},{id: "members-kohei-kajikawa",
+          title: 'Kohei Kajikawa',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/kohei-kajikawa/";
+            },},{id: "members-maasa-okamoto",
+          title: 'Maasa Okamoto',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/maasa-okamoto/";
+            },},{id: "members-mana-ashida",
+          title: 'Mana Ashida',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/mana-ashida/";
+            },},{id: "members-miyu-oba",
+          title: 'Miyu Oba',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/miyu-oba/";
+            },},{id: "members-momoka-furuhashi",
+          title: 'Momoka Furuhashi',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/momoka-furuhashi/";
+            },},{id: "members-rei-emura",
+          title: 'Rei Emura',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/rei-emura/";
             },},{id: "members-saku-sugawara",
           title: 'Saku Sugawara',
           description: "",
           section: "Members",handler: () => {
               window.location.href = "/members/saku-sugawara/";
-            },},{id: "members-suzuki-hanako",
-          title: 'Suzuki Hanako',
+            },},{id: "members-satoshi-hirose",
+          title: 'Satoshi Hirose',
           description: "",
           section: "Members",handler: () => {
-              window.location.href = "/members/suzuki-hanako/";
-            },},{id: "members-yamada-taro",
-          title: 'Yamada Taro',
+              window.location.href = "/members/satoshi-hirose/";
+            },},{id: "members-senri-honda",
+          title: 'Senri Honda',
           description: "",
           section: "Members",handler: () => {
-              window.location.href = "/members/yamada-taro/";
+              window.location.href = "/members/senri-honda/";
+            },},{id: "members-sijing-qin",
+          title: 'Sijing Qin',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/sijing-qin/";
+            },},{id: "members-takuma-sato",
+          title: 'Takuma Sato',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/takuma-sato/";
+            },},{id: "members-taro-hiraoka",
+          title: 'Taro Hiraoka',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/taro-hiraoka/";
+            },},{id: "members-tatsuhiko-akiyama",
+          title: 'Tatsuhiko Akiyama',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/tatsuhiko-akiyama/";
+            },},{id: "members-xin-sun",
+          title: 'Xin Sun',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/xin-sun/";
+            },},{id: "members-yoko-kayano",
+          title: 'Yoko Kayano',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/yoko-kayano/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
