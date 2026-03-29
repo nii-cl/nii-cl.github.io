@@ -204,6 +204,8 @@
       font-weight: 500;
       padding: 0;
       margin: 0;
+      white-space: normal;
+      word-break: break-word;
     }
   }
 
@@ -211,6 +213,7 @@
   .navbar-landscape-links {
     border-top: 1px solid var(--global-divider-color);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0;
 
