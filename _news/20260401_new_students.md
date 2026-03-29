@@ -10,4 +10,9 @@ We welcome 3 new joiners from this April!
 
 ---
 
+- Satoshi Hirose Master Student
+- Akira awabata Ph.D. Student
+- Mana Ashida Ph.D. Student
+- Yoko Kayano Master Student
+
 
