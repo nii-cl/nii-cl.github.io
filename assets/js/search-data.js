@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "research",
-          description: "Research themes of Sugawara Lab at National Institute of Informatics.",
+          description: "Research themes of Sugawara Group at National Institute of Informatics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-join",
           title: "join",
-          description: "Information for prospective members of Sugawara Lab at National Institute of Informatics.",
+          description: "Information for prospective members of Sugawara Group at National Institute of Informatics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/join/";
@@ -477,6 +477,11 @@ ninja.data = [{
           description: "",
           section: "Members",handler: () => {
               window.location.href = "/members/rei-emura/";
+            },},{id: "members-ryo-ueda",
+          title: 'Ryo Ueda',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/ryo-ueda/";
             },},{id: "members-saku-sugawara",
           title: 'Saku Sugawara',
           description: "",
@@ -522,16 +527,13 @@ ninja.data = [{
           description: "",
           section: "Members",handler: () => {
               window.location.href = "/members/yoko-kayano/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-we-welcome-3-new-students",
+          title: 'We welcome 3 new students',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+              window.location.href = "/news/20260401_new_students/";
+            },},{id: "news-our-website-is-up-and-running",
+          title: 'Our website is up and running!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
