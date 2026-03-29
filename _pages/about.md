@@ -1,7 +1,7 @@
 ---
 layout: about
 title: home
-about_title: Sugawara Lab
+about_title: Sugawara Group
 compact_title: true
 permalink: /
 

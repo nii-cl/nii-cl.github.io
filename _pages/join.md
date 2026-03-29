@@ -2,7 +2,7 @@
 layout: page
 permalink: /join/
 title: join
-description: Information for prospective members of Sugawara Lab at National Institute of Informatics.
+description: Information for prospective members of Sugawara Group at National Institute of Informatics.
 nav: true
 nav_order: 5
 ---

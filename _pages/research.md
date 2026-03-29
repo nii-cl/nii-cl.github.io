@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: research
-description: Research themes of Sugawara Lab at National Institute of Informatics.
+description: Research themes of Sugawara Group at National Institute of Informatics.
 nav: true
 nav_order: 3
 ---
