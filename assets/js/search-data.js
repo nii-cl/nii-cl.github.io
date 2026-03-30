@@ -37,8 +37,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/seminars/";
           },
-        },{id: "nav-join",
-          title: "join",
+        },{id: "nav-joining-the-lab",
+          title: "Joining the Lab",
           description: "Information for prospective members of Sugawara Group at National Institute of Informatics.",
           section: "Navigation",
           handler: () => {
