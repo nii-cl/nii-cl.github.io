@@ -17,6 +17,7 @@ _styles: >
 This seminar provides a forum for group members and invited guests to present and discuss ongoing research, including work in progress and recent findings.
 
 {% if site.data.seminars %}
+
 <table>
   <thead>
     <tr>

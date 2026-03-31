@@ -11,7 +11,7 @@ nav_order: 3
 <!-- _pages/research.md -->
 <!-- TODO: translate and populate from penzant.net/lab -->
 
-In natural language processing and computational linguistics, our research centers on a fundamental question: *What are we doing when we model linguistic intelligence, and what can we learn from it?* We approach this question by integrating perspectives from linguistics, psychology, and philosophy. Our current work focuses on the following three areas:
+In natural language processing and computational linguistics, our research centers on a fundamental question: _What are we doing when we model linguistic intelligence, and what can we learn from it?_ We approach this question by integrating perspectives from linguistics, psychology, and philosophy. Our current work focuses on the following three areas:
 
 #### 1. Evaluation of Linguistic Intelligence and Its Methodology
 
