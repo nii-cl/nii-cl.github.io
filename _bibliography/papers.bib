@@ -3,249 +3,337 @@
 
 @string{aps = {American Physical Society,}}
 
-@inproceedings{ho-etal-2020-constructing,
-  bibtex_show = {true},
-  title       = {Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps},
-  author      = {Ho, Xanh and Duong Nguyen, Anh-Khoa and Sugawara, Saku and Aizawa, Akiko},
-  booktitle   = {Proceedings of the 28th International Conference on Computational Linguistics},
-  month       = dec,
-  year        = {2020},
-  address     = {Barcelona, Spain (Online)},
-  publisher   = {International Committee on Computational Linguistics},
-  url         = {https://aclanthology.org/2020.coling-main.580/},
-  doi         = {10.18653/v1/2020.coling-main.580},
-  pages       = {6609--6625},
-  abstract    = {A multi-hop question answering (QA) dataset aims to test reasoning and inference skills by requiring a model to read multiple paragraphs to answer a given question. However, current datasets do not provide a complete explanation for the reasoning process from the question to the answer. Further, previous studies revealed that many examples in existing multi-hop datasets do not require multi-hop reasoning to answer a question. In this study, we present a new multi-hop QA dataset, called 2WikiMultiHopQA, which uses structured and unstructured data. In our dataset, we introduce the evidence information containing a reasoning path for multi-hop questions. The evidence information has two benefits: (i) providing a comprehensive explanation for predictions and (ii) evaluating the reasoning skills of a model. We carefully design a pipeline and a set of templates when generating a question-answer pair that guarantees the multi-hop steps and the quality of the questions. We also exploit the structured format in Wikidata and use logical rules to create questions that are natural but still require multi-hop reasoning. Through experiments, we demonstrate that our dataset is challenging for multi-hop models and it ensures that multi-hop reasoning is required.},
-  abbr        = {COLING}
-}
-
-@inproceedings{sugawara-etal-2018-makes,
-  bibtex_show = {true},
-  title = {What Makes Reading Comprehension Questions Easier?},
-  author = {Sugawara, Saku  and Inui, Kentaro  and Sekine, Satoshi  and Aizawa, Akiko},
-  editor = {Riloff, Ellen  and Chiang, David  and Hockenmaier, Julia  and Tsujii, Jun{'}ichi},
-  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
-  month = oct # "-" # nov,
-  year = {2018},
-  address = {Brussels, Belgium},
-  publisher = {Association for Computational Linguistics},
-  url = {https://aclanthology.org/D18-1453/},
-  doi = {10.18653/v1/D18-1453},
-  pages = {4208--4219},
-  abstract = {A challenge in creating a dataset for machine reading comprehension (MRC) is to collect questions that require a sophisticated understanding of language to answer beyond using superficial cues. In this work, we investigate what makes questions easier across recent 12 MRC datasets with three question styles (answer extraction, description, and multiple choice). We propose to employ simple heuristics to split each dataset into easy and hard subsets and examine the performance of two baseline models for each of the subsets. We then manually annotate questions sampled from each subset with both validity and requisite reasoning skills to investigate which skills explain the difference between easy and hard questions. From this study, we observed that (i) the baseline performances for the hard subsets remarkably degrade compared to those of entire datasets, (ii) hard questions require knowledge inference and multiple-sentence reasoning in comparison with easy questions, and (iii) multiple-choice questions tend to require a broader range of reasoning skills than answer extraction and description questions. These results suggest that one might overestimate recent advances in MRC.}
-}
-
-@inproceedings{sugawara-aizawa-2016-analysis,
-    title = "An Analysis of Prerequisite Skills for Reading Comprehension",
-    author = "Sugawara, Saku  and
-      Aizawa, Akiko",
-    editor = "Louis, Annie  and
-      Roth, Michael  and
-      Webber, Bonnie  and
-      White, Michael  and
-      Zettlemoyer, Luke",
-    booktitle = "Proceedings of the Workshop on Uphill Battles in Language Processing: Scaling Early Achievements to Robust Methods",
+@inproceedings{liu-etal-2025-tactfultom,
+    title = "{T}actful{T}o{M}: Do {LLM}s have the Theory of Mind ability to understand White Lies?",
+    author = "Liu, Yiwei  and
+      Pretty, Emma Jane  and
+      Huang, Jiahao  and
+      Sugawara, Saku",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
-    year = "2016",
-    address = "Austin, TX",
+    year = "2025",
+    address = "Suzhou, China",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/W16-6001/",
-    doi = "10.18653/v1/W16-6001",
-    pages = "1--5"
+    url = "https://aclanthology.org/2025.emnlp-main.1272/",
+    doi = "10.18653/v1/2025.emnlp-main.1272",
+    pages = "25043--25061",
+    ISBN = "979-8-89176-332-6",
+    abstract = "While recent studies explore Large Language Models' (LLMs) performance on Theory of Mind (ToM) reasoning tasks, research on ToM abilities that require more nuanced social context is limited, such as white lies. We introduce TactfulToM, a novel English benchmark designed to evaluate LLMs' ability to understand white lies within real-life conversations and reason about prosocial motivations behind them, particularly when they are used to spare others' feelings and maintain social harmony. Our benchmark is generated through a multi-stage human-in-the-loop pipeline where LLMs expand manually designed seed stories into conversations to maintain the information asymmetry between participants necessary for authentic white lies. We show that TactfulToM is challenging for state-of-the-art models, which perform substantially below humans, revealing shortcomings in their ability to fully comprehend the ToM reasoning that enables true understanding of white lies."
 }
 
-@inproceedings{kaneko-etal-2016-annotation,
-    title = "Annotation and Analysis of Discourse Relations, Temporal Relations and Multi-Layered Situational Relations in {J}apanese Texts",
-    author = "Kaneko, Kimi  and
+@inproceedings{furuhashi-etal-2025-checklists,
+    title = "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
+    author = "Furuhashi, Momoka  and
+      Nakayama, Kouta  and
+      Kodama, Takashi  and
+      Sugawara, Saku",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.538/",
+    doi = "10.18653/v1/2025.emnlp-main.538",
+    pages = "10630--10653",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Automatic evaluation of generative tasks using large language models faces challenges due to ambiguous criteria. Although automatic checklist generation is a potentially promising approach, its usefulness remains underexplored.We investigate whether checklists should be used for all questions or selectively, generate them using six methods, evaluate their effectiveness across eight model sizes, and identify checklist items that correlate with human evaluations.Through experiments on pairwise comparison and direct scoring tasks, we find that selective checklist use tends to improve evaluation performance in pairwise settings, while its benefits are less consistent in direct scoring.Our analysis also shows that even checklist items with low correlation to human scores often reflect human-written criteria, indicating potential inconsistencies in human evaluation. These findings highlight the need to more clearly define objective evaluation criteria to guide both human and automatic evaluations.Our code is available at https://github.com/momo0817/checklist-effectiveness-study."
+}
+
+@inproceedings{kayano-sugawara-2025-specification,
+    title = "Specification-Aware Machine Translation and Evaluation for Purpose Alignment",
+    author = "Kayano, Yoko  and
+      Sugawara, Saku",
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Tenth Conference on Machine Translation",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.wmt-1.7/",
+    doi = "10.18653/v1/2025.wmt-1.7",
+    pages = "113--141",
+    ISBN = "979-8-89176-341-8",
+    abstract = "In professional settings, translation is guided by communicative goals and client needs, often formalized as specifications.While existing evaluation frameworks acknowledge the importance of such specifications, these specifications are often treated only implicitly in machine translation (MT) research.Drawing on translation studies, we provide a theoretical rationale for why specifications matter in professional translation, as well as a practical guide to implementing specification-aware MT and evaluation.Building on this foundation, we apply our framework to the translation of investor relations texts from 33 publicly listed companies.In our experiment, we compare five translation types, including official human translations and prompt-based outputs from large language models (LLMs), using expert error analysis, user preference rankings, and an automatic metric. The results show that LLM translations guided by specifications consistently outperformed official human translations in human evaluations, highlighting a gap between perceived and expected quality.These findings demonstrate that integrating specifications into MT workflows, with human oversight, can improve translation quality in ways aligned with professional practice."
+}
+
+@inproceedings{takizawa-etal-2025-mcqformatbench,
+    title = "{MCQF}ormat{B}ench: Robustness Tests for Multiple-Choice Questions",
+    author = "Takizawa, Hiroo  and
       Sugawara, Saku  and
-      Mineshima, Koji  and
-      Bekki, Daisuke",
-    editor = "Hasida, Koiti  and
-      Wong, Kam-Fai  and
-      Calzorari, Nicoletta  and
-      Choi, Key-Sun",
-    booktitle = "Proceedings of the 12th Workshop on {A}sian Language Resources ({ALR}12)",
-    month = dec,
-    year = "2016",
-    address = "Osaka, Japan",
-    publisher = "The COLING 2016 Organizing Committee",
-    url = "https://aclanthology.org/W16-5402/",
-    pages = "10--19"
-}
-
-@article{Sugawara_Yokono_Aizawa_2017, title={Prerequisite Skills for Reading Comprehension: Multi-Perspective Analysis of MCTest Datasets and Systems}, volume={31}, url={https://ojs.aaai.org/index.php/AAAI/article/view/10957}, DOI={10.1609/aaai.v31i1.10957}, abstract={One of the main goals of natural language processing (NLP) is synthetic understanding of natural language documents, especially reading comprehension (RC). An obstacle to the further development of RC systems is the absence of a synthetic methodology to analyze their performance. It is difficult to examine the performance of systems based solely on their results for tasks because the process of natural language understanding is complex. In order to tackle this problem, we propose in this paper a methodology inspired by unit testing in software engineering that enables the examination of RC systems from multiple aspects. Our methodology consists of three steps. First, we define a set of prerequisite skills for RC based on existing NLP tasks. We assume that RC capability can be divided into these skills. Second, we manually annotate a dataset for an RC task with information regarding the skills needed to answer each question. Finally, we analyze the performance of RC systems for each skill based on the annotation. The last two steps highlight two aspects: the characteristics of the dataset, and the weaknesses in and differences among RC systems. We tested the effectiveness of our methodology by annotating the Machine Comprehension Test (MCTest) dataset and analyzing four existing systems (including a neural system) on it. The results of the annotations showed that answering questions requires a combination of skills, and clarified the kinds of capabilities that systems need to understand natural language. We conclude that the set of prerequisite skills we define are promising for the decomposition and analysis of RC.}, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Sugawara, Saku and Yokono, Hikaru and Aizawa, Akiko}, year={2017}, month={Feb.} }
-
-@inproceedings{sugawara-etal-2017-evaluation,
-    title = "Evaluation Metrics for Machine Reading Comprehension: Prerequisite Skills and Readability",
-    author = "Sugawara, Saku  and
-      Kido, Yusuke  and
-      Yokono, Hikaru  and
       Aizawa, Akiko",
-    editor = "Barzilay, Regina  and
-      Kan, Min-Yen",
-    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    editor = "Arviv, Ofir  and
+      Clinciu, Miruna  and
+      Dhole, Kaustubh  and
+      Dror, Rotem  and
+      Gehrmann, Sebastian  and
+      Habba, Eliya  and
+      Itzhak, Itay  and
+      Mille, Simon  and
+      Perlitz, Yotam  and
+      Santus, Enrico  and
+      Sedoc, Jo{\~a}o  and
+      Shmueli Scheuer, Michal  and
+      Stanovsky, Gabriel  and
+      Tafjord, Oyvind",
+    booktitle = "Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM{\texttwosuperior})",
     month = jul,
-    year = "2017",
-    address = "Vancouver, Canada",
+    year = "2025",
+    address = "Vienna, Austria and virtual meeting",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/P17-1075/",
-    doi = "10.18653/v1/P17-1075",
-    pages = "806--817",
-    abstract = "Knowing the quality of reading comprehension (RC) datasets is important for the development of natural-language understanding systems. In this study, two classes of metrics were adopted for evaluating RC datasets: prerequisite skills and readability. We applied these classes to six existing datasets, including MCTest and SQuAD, and highlighted the characteristics of the datasets according to each metric and the correlation between the two classes. Our dataset analysis suggests that the readability of RC datasets does not directly affect the question difficulty and that it is possible to create an RC dataset that is easy to read but difficult to answer."
+    url = "https://aclanthology.org/2025.gem-1.69/",
+    pages = "824--846",
+    ISBN = "979-8-89176-261-9",
+    abstract = "Multiple-choice questions (MCQs) are often used to evaluate large language models (LLMs). They measure LLMs' general common sense and reasoning abilities, as well as their knowledge in specific domains such as law and medicine. However, the robustness of LLMs to various question formats in MCQs has not been thoroughly evaluated. While there are studies on the sensitivity of LLMs to input variations, research into their responsiveness to different question formats is still limited. In this study, we propose a method to construct tasks to comprehensively evaluate the robustness against format changes of MCQs by decomposing the answering process into several steps. Using this dataset, we evaluate nine LLMs, such as Llama3-70B and Mixtral-8x7B. We find the lack of robustness to differences in the format of MCQs. It is crucial to consider whether the format of MCQs influences their evaluation scores when assessing LLMs using MCQ datasets."
 }
 
-@inproceedings{DBLP:conf/aaai/SugawaraSIA20,
-  author       = {Saku Sugawara and
-                  Pontus Stenetorp and
-                  Kentaro Inui and
-                  Akiko Aizawa},
-  title        = {Assessing the Benchmarking Capacity of Machine Reading Comprehension
-                  Datasets},
-  booktitle    = {{AAAI}},
-  pages        = {8918--8927},
-  publisher    = {{AAAI} Press},
-  year         = {2020}
+@inproceedings{sakamoto-etal-2025-development,
+    title = "Development of Numerical Error Detection Tasks to Analyze the Numerical Capabilities of Language Models",
+    author = "Sakamoto, Taku  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.666/",
+    pages = "9957--9976",
+    abstract = "Numbers are used to describe quantities in various scenarios in daily life; therefore, numerical errors can significantly affect the meaning of the entire sentence, and even a single-letter error can be fatal. Detecting numerical errors often requires a high level of commonsense and is difficult even with the recent large language models (LLMs). In this study, we create a benchmark dataset of numerical error detection that uses automatically generated numerical errors. In our analysis, we classify the numerical errors based on the properties of the errors and investigate the ability of the model from several perspectives, including the error class, error size, and passage domain. The experimental results indicate that GPT-3.5, GPT-4, and Llama-3-Instruct (8B) perform well in the numerical error detection task; however, they are not as accurate as humans. We find that the LLMs misidentified correct numbers as errors more frequently than the humans did. In particular, the analysis demonstrates that the current LLMs still need improvement for detecting numerical errors requiring calculations or extensive prior knowledge."
 }
 
-@inproceedings{ho-etal-2020-constructing,
-    title = "Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps",
+@inproceedings{10.1145/3746027.3755623,
+author = {Waseda, Futa and Sugawara, Saku and Echizen, Isao},
+title = {Quality Text, Robust Vision: The Role of Language in Enhancing Visual Robustness of Vision-Language Models},
+year = {2025},
+isbn = {9798400720352},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746027.3755623},
+doi = {10.1145/3746027.3755623},
+abstract = {Defending pre-trained vision-language models (VLMs), such as CLIP, against adversarial attacks is crucial, as these models are widely used in diverse zero-shot tasks, including image classification. However, existing adversarial training (AT) methods for robust fine-tuning largely overlook the role of language in enhancing visual robustness. Specifically, (1) supervised AT methods rely on short texts (e.g., class labels) to generate adversarial perturbations, leading to overfitting to object classes in the training data, and (2) unsupervised AT avoids this overfitting but remains suboptimal against practical text-guided adversarial attacks due to its lack of semantic guidance. To address these limitations, we propose Quality Text-guided Adversarial Fine-Tuning (QT-AFT), which leverages high-quality captions during training to guide adversarial examples away from diverse semantics present in images. This enables the visual encoder to robustly recognize a broader range of image features even under adversarial noise, thereby enhancing robustness across diverse downstream tasks. QT-AFT overcomes the key weaknesses of prior methods---overfitting in supervised AT and lack of semantic awareness in unsupervised AT---achieving state-of-the-art zero-shot adversarial robustness and clean accuracy, evaluated across 16 zero-shot datasets. Furthermore, our comprehensive study uncovers several key insights into the role of language in enhancing vision robustness; for example, describing object properties in addition to object names further enhances zero-shot robustness. Our findings point to an urgent direction for future work---centering high-quality linguistic supervision in robust visual representation learning.},
+booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+pages = {4808–4816},
+numpages = {9},
+keywords = {adversarial defense, adversarial robustness, vision-language models, zero-shot image recognition},
+location = {Dublin, Ireland},
+series = {MM '25}
+}
+
+@inproceedings{kawabata-sugawara-2024-rationale,
+    title = "Rationale-Aware Answer Verification by Pairwise Self-Evaluation",
+    author = "Kawabata, Akira  and
+      Sugawara, Saku",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.905/",
+    doi = "10.18653/v1/2024.emnlp-main.905",
+    pages = "16178--16196",
+    abstract = "Answer verification identifies correct solutions among candidates generated by large language models (LLMs). Current approaches typically train verifier models by labeling solutions as correct or incorrect based solely on whether the final answer matches the gold answer. However, this approach neglects any flawed rationale in the solution yielding the correct answer, undermining the verifier{'}s ability to distinguish between sound and flawed rationales. We empirically show that in StrategyQA, only 19{\%} of LLM-generated solutions with correct answers have valid rationales, thus leading to an unreliable verifier. Furthermore, we demonstrate that training a verifier on valid rationales significantly improves its ability to distinguish valid and flawed rationale. To make a better verifier without extra human supervision, we introduce REPS (Rationale Enhancement through Pairwise Selection), a method for selecting valid rationales from candidates by iteratively applying pairwise self-evaluation using the same LLM that generates the solutions. Verifiers trained on solutions selected by REPS outperform those trained using conventional training methods on three reasoning benchmarks (ARC-Challenge, DROP, and StrategyQA). Our results suggest that training reliable verifiers requires ensuring the validity of rationales in addition to the correctness of the final answers, which would be critical for models assisting humans in solving complex reasoning tasks."
+}
+
+@inproceedings{oba-etal-2024-language,
+    title = "Can Language Models Induce Grammatical Knowledge from Indirect Evidence?",
+    author = "Oba, Miyu  and
+      Oseki, Yohei  and
+      Fukatsu, Akiyo  and
+      Haga, Akari  and
+      Ouchi, Hiroki  and
+      Watanabe, Taro  and
+      Sugawara, Saku",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.1146/",
+    doi = "10.18653/v1/2024.emnlp-main.1146",
+    pages = "20591--20603",
+    abstract = "What kinds of and how much data is necessary for language models to induce grammatical knowledge to judge sentence acceptability? Recent language models still have much room for improvement in their data efficiency compared to humans. This paper investigates whether language models efficiently use indirect data (indirect evidence), from which they infer sentence acceptability. In contrast, humans use indirect evidence efficiently, which is considered one of the inductive biases contributing to efficient language acquisition. To explore this question, we introduce the Wug InDirect Evidence Test (WIDET), a dataset consisting of training instances inserted into the pre-training data and evaluation instances. We inject synthetic instances with newly coined wug words into pretraining data and explore the model{'}s behavior on evaluation data that assesses grammatical acceptability regarding those words. We prepare the injected instances by varying their levels of indirectness and quantity. Our experiments surprisingly show that language models do not induce grammatical knowledge even after repeated exposure to instances with the same structure but differing only in lexical items from evaluation instances in certain language phenomena. Our findings suggest a potential direction for future research: developing models that use latent indirect evidence to induce grammatical knowledge."
+}
+
+@inproceedings{haga-etal-2024-modeling,
+    title = "Modeling Overregularization in Children with Small Language Models",
+    author = "Haga, Akari  and
+      Sugawara, Saku  and
+      Fukatsu, Akiyo  and
+      Oba, Miyu  and
+      Ouchi, Hiroki  and
+      Watanabe, Taro  and
+      Oseki, Yohei",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.865/",
+    doi = "10.18653/v1/2024.findings-acl.865",
+    pages = "14532--14550",
+    abstract = "The imitation of the children{'}s language acquisition process has been explored to make language models (LMs) more efficient.In particular, errors caused by children{'}s regularization (so-called overregularization, e.g., using wroted for the past tense of write) have been widely studied to reveal the mechanisms of language acquisition. Existing research has analyzed regularization in language acquisition only by modeling word inflection directly, which is unnatural in light of human language acquisition. In this paper, we hypothesize that language models that imitate the errors children make during language acquisition have a learning process more similar to humans. To verify this hypothesis, we analyzed the learning curve and error preferences of verb inflections in small-scale LMs using acceptability judgments. We analyze the differences in results by model architecture, data, and tokenization. Our model shows child-like U-shaped learning curves clearly for certain verbs, but the preferences for types of overgeneralization did not fully match the observations in children."
+}
+
+@inproceedings{asami-sugawara-2024-makes,
+    title = "What Makes Language Models Good-enough?",
+    author = "Asami, Daiki  and
+      Sugawara, Saku",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.913/",
+    doi = "10.18653/v1/2024.findings-acl.913",
+    pages = "15453--15467",
+    abstract = "Psycholinguistic research suggests that humans may build a representation of linguistic input that is `good-enough' for the task at hand. This study examines what architectural features make language models learn human-like good-enough language processing. We focus on the number of layers and self-attention heads in Transformers. We create a good-enough language processing (GELP) evaluation dataset (7,680 examples), which is designed to test the effects of two plausibility types, eight construction types, and three degrees of memory cost on language processing. To annotate GELP, we first conduct a crowdsourcing experiment whose design follows prior psycholinguistic studies. Our model evaluation against the annotated GELP then reveals that the full model as well as models with fewer layers and/or self-attention heads exhibit a good-enough performance. This result suggests that models with shallower depth and fewer heads can learn good-enough language processing."
+}
+
+@InProceedings{FURUHASHI2024AUT,
+author    = {Furuhashi, M. and Funayama, H. and Iwase, Y. and Matsubayashi, Y. and Isobe, Y. and Nagahama, T. and Sugawara, S. and Inui, K.},
+title     = {AUTOMATIC FEEDBACK GENERATION FOR SHORT ANSWER QUESTIONS USING ANSWER DIAGNOSTIC GRAPHS},
+series    = {16th International Conference on Education and New Learning Technologies},
+booktitle = {EDULEARN24 Proceedings},
+isbn      = {978-84-09-62938-1},
+issn      = {2340-1117},
+doi       = {10.21125/edulearn.2024.1590},
+url       = {https://doi.org/10.21125/edulearn.2024.1590},
+publisher = {IATED},
+location  = {Palma, Spain},
+month     = {1-3 July, 2024},
+year      = {2024},
+pages     = {6706-6716}}
+
+@inproceedings{asami-sugawara-2023-propres,
+    title = "{PROPRES}: Investigating the Projectivity of Presupposition with Various Triggers and Environments",
+    author = "Asami, Daiki  and
+      Sugawara, Saku",
+    editor = "Jiang, Jing  and
+      Reitter, David  and
+      Deng, Shumin",
+    booktitle = "Proceedings of the 27th Conference on Computational Natural Language Learning (CoNLL)",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.conll-1.9/",
+    doi = "10.18653/v1/2023.conll-1.9",
+    pages = "122--137",
+    abstract = "What makes a presupposition of an utterance {---}information taken for granted by its speaker{---} different from other pragmatic inferences such as an entailment is projectivity (e.g., the negative sentence the boy did not stop shedding tears presupposes the boy had shed tears before). The projectivity may vary depending on the combination of presupposition triggers and environments. However, prior natural language understanding studies fail to take it into account as they either use no human baseline or include only negation as an entailment-canceling environment to evaluate models' performance. The current study attempts to reconcile these issues. We introduce a new dataset, projectivity of presupposition (PROPRES), which includes 12k premise{--}hypothesis pairs crossing six triggers involving some lexical variety with five environments. Our human evaluation reveals that humans exhibit variable projectivity in some cases. However, the model evaluation shows that the best-performed model, DeBERTa, does not fully capture it. Our findings suggest that probing studies on pragmatic inferences should take extra care of the human judgment variability and the combination of linguistic items."
+}
+
+@inproceedings{kawabata-sugawara-2023-evaluating,
+    title = "Evaluating the Rationale Understanding of Critical Reasoning in Logical Reading Comprehension",
+    author = "Kawabata, Akira  and
+      Sugawara, Saku",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.9/",
+    doi = "10.18653/v1/2023.emnlp-main.9",
+    pages = "116--143",
+    abstract = "To precisely evaluate a language model{'}s capability for logical reading comprehension, we present a dataset for testing the understanding of the rationale behind critical reasoning. For questions taken from an existing multiple-choice logical reading comprehension dataset, we crowdsource rationale texts that explain why we should select or eliminate answer options, resulting in 3,003 multiple-choice subquestions that are associated with 943 main questions. Experiments on our dataset show that recent large language models (e.g., InstructGPT) struggle to answer the subquestions even if they are able to answer the main questions correctly. We find that the models perform particularly poorly in answering subquestions written for the incorrect options of the main questions, implying that the models have a limited capability for explaining why incorrect alternatives should be eliminated. These results suggest that our dataset encourages further investigation into the critical reasoning ability of language models while focusing on the elimination process of relevant alternatives."
+}
+
+@inproceedings{sugawara-tsugita-2023-degrees,
+    title = "On Degrees of Freedom in Defining and Testing Natural Language Understanding",
+    author = "Sugawara, Saku  and
+      Tsugita, Shun",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.861/",
+    doi = "10.18653/v1/2023.findings-acl.861",
+    pages = "13625--13649",
+    abstract = "Natural language understanding (NLU) studies often exaggerate or underestimate the capabilities of systems, thereby limiting the reproducibility of their findings. These erroneous evaluations can be attributed to the difficulty of defining and testing NLU adequately. In this position paper, we reconsider this challenge by identifying two types of researcher degrees of freedom. We revisit Turing{'}s original interpretation of the Turing test and reveal that an effective test of NLU does not provide an operational definition; it merely provides inductive evidence that the test subject understands the language sufficiently well to meet stakeholder objectives. In other words, stakeholders are free to arbitrarily define NLU through their objectives. To use the test results as inductive evidence, stakeholders must carefully assess if the interpretation of test scores is valid or not. However, designing and using NLU tests involve other degrees of freedom, such as specifying target skills and defining evaluation metrics. As a result, achieving consensus among stakeholders becomes difficult. To resolve this issue, we propose a validity argument, which is a framework comprising a series of validation criteria across test components. By demonstrating that current practices in NLU studies can be associated with those criteria and organizing them into a comprehensive checklist, we prove that the validity argument can serve as a coherent guideline for designing credible test sets and facilitating scientific communication."
+}
+
+@inproceedings{kondo-etal-2023-probing,
+    title = "Probing Physical Reasoning with Counter-Commonsense Context",
+    author = "Kondo, Kazushi  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.53/",
+    doi = "10.18653/v1/2023.acl-short.53",
+    pages = "603--612",
+    abstract = "In this study, we create a CConS (Counter-commonsense Contextual Size comparison) dataset to investigate how physical commonsense affects the contextualized size comparison task; the proposed dataset consists of both contexts that fit physical commonsense and those that do not. This dataset tests the ability of language models to predict the size relationship between objects under various contexts generated from our curated noun list and templates. We measure the ability of several masked language models and encoder-decoder models. The results show that while large language models can use prepositions such as ``in'' and ``into'' in the provided context to infer size relationships, they fail to use verbs and thus make incorrect judgments led by their prior physical commonsense."
+}
+
+@article{Shinoda_Sugawara_Aizawa_2023, title={Which Shortcut Solution Do Question Answering Models Prefer to Learn?}, volume={37}, url={https://ojs.aaai.org/index.php/AAAI/article/view/26590}, DOI={10.1609/aaai.v37i11.26590}, abstract={Question answering (QA) models for reading comprehension tend to exploit spurious correlations in training sets and thus learn shortcut solutions rather than the solutions intended by QA datasets.
+QA models that have learned shortcut solutions can achieve human-level performance in shortcut examples where shortcuts are valid, but these same behaviors degrade generalization potential on anti-shortcut examples where shortcuts are invalid.
+Various methods have been proposed to mitigate this problem, but they do not fully take the characteristics of shortcuts themselves into account.
+We assume that the learnability of shortcuts, i.e., how easy it is to learn a shortcut, is useful to mitigate the problem.
+Thus, we first examine the learnability of the representative shortcuts on extractive and multiple-choice QA datasets.
+Behavioral tests using biased training sets reveal that shortcuts that exploit answer positions and word-label correlations are preferentially learned for extractive and multiple-choice QA, respectively.
+We find that the more learnable a shortcut is, the flatter and deeper the loss landscape is around the shortcut solution in the parameter space.
+We also find that the availability of the preferred shortcuts tends to make the task easier to perform from an information-theoretic viewpoint.
+Lastly, we experimentally show that the learnability of shortcuts can be utilized to construct an effective QA training set; the more learnable a shortcut is, the smaller the proportion of anti-shortcut examples required to achieve comparable performance on shortcut and anti-shortcut examples.
+We claim that the learnability of shortcuts should be considered when designing mitigation methods.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Shinoda, Kazutoshi and Sugawara, Saku and Aizawa, Akiko}, year={2023}, month={Jun.}, pages={13564-13572} }
+
+@inproceedings{ho-etal-2023-analyzing,
+    title = "Analyzing the Effectiveness of the Underlying Reasoning Tasks in Multi-hop Question Answering",
     author = "Ho, Xanh  and
       Duong Nguyen, Anh-Khoa  and
       Sugawara, Saku  and
       Aizawa, Akiko",
-    editor = "Scott, Donia  and
-      Bel, Nuria  and
-      Zong, Chengqing",
-    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
-    month = dec,
-    year = "2020",
-    address = "Barcelona, Spain (Online)",
-    publisher = "International Committee on Computational Linguistics",
-    url = "https://aclanthology.org/2020.coling-main.580/",
-    doi = "10.18653/v1/2020.coling-main.580",
-    pages = "6609--6625"
-}
-
-@inproceedings{sugawara-etal-2021-benchmarking,
-    title = "Benchmarking Machine Reading Comprehension: A Psychological Perspective",
-    author = "Sugawara, Saku  and
-      Stenetorp, Pontus  and
-      Aizawa, Akiko",
-    editor = "Merlo, Paola  and
-      Tiedemann, Jorg  and
-      Tsarfaty, Reut",
-    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
-    month = apr,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.eacl-main.137/",
-    doi = "10.18653/v1/2021.eacl-main.137",
-    pages = "1592--1612"
-}
-
-@inproceedings{meissner-etal-2021-embracing,
-    title = "Embracing Ambiguity: {S}hifting the Training Target of {NLI} Models",
-    author = "Meissner, Johannes Mario  and
-      Thumwanit, Napat  and
-      Sugawara, Saku  and
-      Aizawa, Akiko",
-    editor = "Zong, Chengqing  and
-      Xia, Fei  and
-      Li, Wenjie  and
-      Navigli, Roberto",
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
-    month = aug,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.acl-short.109/",
-    doi = "10.18653/v1/2021.acl-short.109",
-    pages = "862--869"
-}
-
-@inproceedings{nangia-etal-2021-ingredients,
-    title = "What Ingredients Make for an Effective Crowdsourcing Protocol for Difficult {NLU} Data Collection Tasks?",
-    author = "Nangia, Nikita  and
-      Sugawara, Saku  and
-      Trivedi, Harsh  and
-      Warstadt, Alex  and
-      Vania, Clara  and
-      Bowman, Samuel R.",
-    editor = "Zong, Chengqing  and
-      Xia, Fei  and
-      Li, Wenjie  and
-      Navigli, Roberto",
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
-    month = aug,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.acl-long.98/",
-    doi = "10.18653/v1/2021.acl-long.98",
-    pages = "1221--1235",
-    abstract = "Crowdsourcing is widely used to create data for common natural language understanding tasks. Despite the importance of these datasets for measuring and refining model understanding of language, there has been little focus on the crowdsourcing methods used for collecting the datasets. In this paper, we compare the efficacy of interventions that have been proposed in prior work as ways of improving data quality. We use multiple-choice question answering as a testbed and run a randomized trial by assigning crowdworkers to write questions under one of four different data collection protocols. We find that asking workers to write explanations for their examples is an ineffective stand-alone strategy for boosting NLU example difficulty. However, we find that training crowdworkers, and then using an iterative process of collecting data, sending feedback, and qualifying workers based on expert judgments is an effective means of collecting challenging data. But using crowdsourced, instead of expert judgments, to qualify workers and send feedback does not prove to be effective. We observe that the data from the iterative protocol with expert assessments is more challenging by several measures. Notably, the human{--}model gap on the unanimous agreement portion of this data is, on average, twice as large as the gap for the baseline protocol data."
-}
-
-@inproceedings{shinoda-etal-2021-improving,
-    title = "Improving the Robustness of {QA} Models to Challenge Sets with Variational Question-Answer Pair Generation",
-    author = "Shinoda, Kazutoshi  and
-      Sugawara, Saku  and
-      Aizawa, Akiko",
-    editor = "Kabbara, Jad  and
-      Lin, Haitao  and
-      Paullada, Amandalynne  and
-      Vamvas, Jannis",
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: Student Research Workshop",
-    month = aug,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.acl-srw.21/",
-    doi = "10.18653/v1/2021.acl-srw.21",
-    pages = "197--214"
-}
-
-@inproceedings{shinoda-etal-2021-question,
-    title = "Can Question Generation Debias Question Answering Models? A Case Study on Question{--}Context Lexical Overlap",
-    author = "Shinoda, Kazutoshi  and
-      Sugawara, Saku  and
-      Aizawa, Akiko",
-    editor = "Fisch, Adam  and
-      Talmor, Alon  and
-      Chen, Danqi  and
-      Choi, Eunsol  and
-      Seo, Minjoon  and
-      Lewis, Patrick  and
-      Jia, Robin  and
-      Min, Sewon",
-    booktitle = "Proceedings of the 3rd Workshop on Machine Reading for Question Answering",
-    month = nov,
-    year = "2021",
-    address = "Punta Cana, Dominican Republic",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.mrqa-1.6/",
-    doi = "10.18653/v1/2021.mrqa-1.6",
-    pages = "63--72"
-}
-
-@inproceedings{sugawara-etal-2022-makes,
-    title = "What Makes Reading Comprehension Questions Difficult?",
-    author = "Sugawara, Saku  and
-      Nangia, Nikita  and
-      Warstadt, Alex  and
-      Bowman, Samuel",
-    editor = "Muresan, Smaranda  and
-      Nakov, Preslav  and
-      Villavicencio, Aline",
-    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
     month = may,
-    year = "2022",
-    address = "Dublin, Ireland",
+    year = "2023",
+    address = "Dubrovnik, Croatia",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.acl-long.479/",
-    doi = "10.18653/v1/2022.acl-long.479",
-    pages = "6951--6971"
+    url = "https://aclanthology.org/2023.findings-eacl.87/",
+    doi = "10.18653/v1/2023.findings-eacl.87",
+    pages = "1163--1180",
+    abstract = "To explain the predicted answers and evaluate the reasoning abilities of models, several studies have utilized underlying reasoning (UR) tasks in multi-hop question answering (QA) datasets. However, it remains an open question as to how effective UR tasks are for the QA task when training models on both tasks in an end-to-end manner. In this study, we address this question by analyzing the effectiveness of UR tasks (including both sentence-level and entity-level tasks) in three aspects: (1) QA performance, (2) reasoning shortcuts, and (3) robustness. While the previous models have not been explicitly trained on an entity-level reasoning prediction task, we build a multi-task model that performs three tasks together: sentence-level supporting facts prediction, entity-level reasoning prediction, and answer prediction. Experimental results on 2WikiMultiHopQA and HotpotQA-small datasets reveal that (1) UR tasks can improve QA performance. Using four debiased datasets that are newly created, we demonstrate that (2) UR tasks are helpful in preventing reasoning shortcuts in the multi-hop QA task. However, we find that (3) UR tasks do not contribute to improving the robustness of the model on adversarial questions, such as sub-questions and inverted questions. We encourage future studies to investigate the effectiveness of entity-level reasoning in the form of natural language questions (e.g., sub-question forms)."
 }
 
 @misc{ho2023surveymeasuringmitigatingreasoning,
@@ -256,59 +344,6 @@
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2209.01824}, 
-}
-
-@inproceedings{ashida-sugawara-2022-possible,
-    title = "Possible Stories: Evaluating Situated Commonsense Reasoning under Multiple Possible Scenarios",
-    author = "Ashida, Mana  and
-      Sugawara, Saku",
-    editor = "Calzolari, Nicoletta  and
-      Huang, Chu-Ren  and
-      Kim, Hansaem  and
-      Pustejovsky, James  and
-      Wanner, Leo  and
-      Choi, Key-Sun  and
-      Ryu, Pum-Mo  and
-      Chen, Hsin-Hsi  and
-      Donatelli, Lucia  and
-      Ji, Heng  and
-      Kurohashi, Sadao  and
-      Paggio, Patrizia  and
-      Xue, Nianwen  and
-      Kim, Seokhwan  and
-      Hahm, Younggyun  and
-      He, Zhong  and
-      Lee, Tony Kyungil  and
-      Santus, Enrico  and
-      Bond, Francis  and
-      Na, Seung-Hoon",
-    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
-    month = oct,
-    year = "2022",
-    address = "Gyeongju, Republic of Korea",
-    publisher = "International Committee on Computational Linguistics",
-    url = "https://aclanthology.org/2022.coling-1.319/",
-    pages = "3606--3630"
-}
-
-@inproceedings{ho-etal-2022-well,
-    title = "How Well Do Multi-hop Reading Comprehension Models Understand Date Information?",
-    author = "Ho, Xanh  and
-      Sugawara, Saku  and
-      Aizawa, Akiko",
-    editor = "He, Yulan  and
-      Ji, Heng  and
-      Li, Sujian  and
-      Liu, Yang  and
-      Chang, Chua-Hui",
-    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
-    month = nov,
-    year = "2022",
-    address = "Online only",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.aacl-short.58/",
-    doi = "10.18653/v1/2022.aacl-short.58",
-    pages = "470--479"
 }
 
 @inproceedings{zhang-etal-2022-cross,
@@ -374,6 +409,78 @@
     abstract = "Extractive question answering (QA) models tend to exploit spurious correlations to make predictions when a training set has unintended biases. This tendency results in models not being generalizable to examples where the correlations do not hold. Determining the spurious correlations QA models can exploit is crucial in building generalizable QA models in real-world applications; moreover, a method needs to be developed that prevents these models from learning the spurious correlations even when a training set is biased. In this study, we discovered that the relative position of an answer, which is defined as the relative distance from an answer span to the closest question-context overlap word, can be exploited by QA models as superficial cues for making predictions. Specifically, we find that when the relative positions in a training set are biased, the performance on examples with relative positions unseen during training is significantly degraded. To mitigate the performance degradation for unseen relative positions, we propose an ensemble-based debiasing method that does not require prior knowledge about the distribution of relative positions. We demonstrate that the proposed method mitigates the models' reliance on relative positions using the biased and full SQuAD dataset. We hope that this study can help enhance the generalization ability of QA models in real-world applications."
 }
 
+@inproceedings{ho-etal-2022-well,
+    title = "How Well Do Multi-hop Reading Comprehension Models Understand Date Information?",
+    author = "Ho, Xanh  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    editor = "He, Yulan  and
+      Ji, Heng  and
+      Li, Sujian  and
+      Liu, Yang  and
+      Chang, Chua-Hui",
+    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.aacl-short.58/",
+    doi = "10.18653/v1/2022.aacl-short.58",
+    pages = "470--479"
+}
+
+@inproceedings{ashida-sugawara-2022-possible,
+    title = "Possible Stories: Evaluating Situated Commonsense Reasoning under Multiple Possible Scenarios",
+    author = "Ashida, Mana  and
+      Sugawara, Saku",
+    editor = "Calzolari, Nicoletta  and
+      Huang, Chu-Ren  and
+      Kim, Hansaem  and
+      Pustejovsky, James  and
+      Wanner, Leo  and
+      Choi, Key-Sun  and
+      Ryu, Pum-Mo  and
+      Chen, Hsin-Hsi  and
+      Donatelli, Lucia  and
+      Ji, Heng  and
+      Kurohashi, Sadao  and
+      Paggio, Patrizia  and
+      Xue, Nianwen  and
+      Kim, Seokhwan  and
+      Hahm, Younggyun  and
+      He, Zhong  and
+      Lee, Tony Kyungil  and
+      Santus, Enrico  and
+      Bond, Francis  and
+      Na, Seung-Hoon",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.319/",
+    pages = "3606--3630"
+}
+
+@inproceedings{sugawara-etal-2022-makes,
+    title = "What Makes Reading Comprehension Questions Difficult?",
+    author = "Sugawara, Saku  and
+      Nangia, Nikita  and
+      Warstadt, Alex  and
+      Bowman, Samuel",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.479/",
+    doi = "10.18653/v1/2022.acl-long.479",
+    pages = "6951--6971"
+}
+
 @misc{shinoda2022penalizingconfidentpredictionslargely,
       title={Penalizing Confident Predictions on Largely Perturbed Inputs Does Not Improve Out-of-Distribution Generalization in Question Answering}, 
       author={Kazutoshi Shinoda and Saku Sugawara and Akiko Aizawa},
@@ -384,338 +491,228 @@
       url={https://arxiv.org/abs/2211.16093}, 
 }
 
-@article{Shinoda_Sugawara_Aizawa_2023, title={Which Shortcut Solution Do Question Answering Models Prefer to Learn?}, volume={37}, url={https://ojs.aaai.org/index.php/AAAI/article/view/26590}, DOI={10.1609/aaai.v37i11.26590}, abstract={Question answering (QA) models for reading comprehension tend to exploit spurious correlations in training sets and thus learn shortcut solutions rather than the solutions intended by QA datasets.
-QA models that have learned shortcut solutions can achieve human-level performance in shortcut examples where shortcuts are valid, but these same behaviors degrade generalization potential on anti-shortcut examples where shortcuts are invalid.
-Various methods have been proposed to mitigate this problem, but they do not fully take the characteristics of shortcuts themselves into account.
-We assume that the learnability of shortcuts, i.e., how easy it is to learn a shortcut, is useful to mitigate the problem.
-Thus, we first examine the learnability of the representative shortcuts on extractive and multiple-choice QA datasets.
-Behavioral tests using biased training sets reveal that shortcuts that exploit answer positions and word-label correlations are preferentially learned for extractive and multiple-choice QA, respectively.
-We find that the more learnable a shortcut is, the flatter and deeper the loss landscape is around the shortcut solution in the parameter space.
-We also find that the availability of the preferred shortcuts tends to make the task easier to perform from an information-theoretic viewpoint.
-Lastly, we experimentally show that the learnability of shortcuts can be utilized to construct an effective QA training set; the more learnable a shortcut is, the smaller the proportion of anti-shortcut examples required to achieve comparable performance on shortcut and anti-shortcut examples.
-We claim that the learnability of shortcuts should be considered when designing mitigation methods.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Shinoda, Kazutoshi and Sugawara, Saku and Aizawa, Akiko}, year={2023}, month={Jun.}, pages={13564-13572} }
+@inproceedings{shinoda-etal-2021-question,
+    title = "Can Question Generation Debias Question Answering Models? A Case Study on Question{--}Context Lexical Overlap",
+    author = "Shinoda, Kazutoshi  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    editor = "Fisch, Adam  and
+      Talmor, Alon  and
+      Chen, Danqi  and
+      Choi, Eunsol  and
+      Seo, Minjoon  and
+      Lewis, Patrick  and
+      Jia, Robin  and
+      Min, Sewon",
+    booktitle = "Proceedings of the 3rd Workshop on Machine Reading for Question Answering",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.mrqa-1.6/",
+    doi = "10.18653/v1/2021.mrqa-1.6",
+    pages = "63--72"
+}
 
-@inproceedings{ho-etal-2023-analyzing,
-    title = "Analyzing the Effectiveness of the Underlying Reasoning Tasks in Multi-hop Question Answering",
+@inproceedings{meissner-etal-2021-embracing,
+    title = "Embracing Ambiguity: {S}hifting the Training Target of {NLI} Models",
+    author = "Meissner, Johannes Mario  and
+      Thumwanit, Napat  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-short.109/",
+    doi = "10.18653/v1/2021.acl-short.109",
+    pages = "862--869"
+}
+
+@inproceedings{nangia-etal-2021-ingredients,
+    title = "What Ingredients Make for an Effective Crowdsourcing Protocol for Difficult {NLU} Data Collection Tasks?",
+    author = "Nangia, Nikita  and
+      Sugawara, Saku  and
+      Trivedi, Harsh  and
+      Warstadt, Alex  and
+      Vania, Clara  and
+      Bowman, Samuel R.",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.98/",
+    doi = "10.18653/v1/2021.acl-long.98",
+    pages = "1221--1235",
+    abstract = "Crowdsourcing is widely used to create data for common natural language understanding tasks. Despite the importance of these datasets for measuring and refining model understanding of language, there has been little focus on the crowdsourcing methods used for collecting the datasets. In this paper, we compare the efficacy of interventions that have been proposed in prior work as ways of improving data quality. We use multiple-choice question answering as a testbed and run a randomized trial by assigning crowdworkers to write questions under one of four different data collection protocols. We find that asking workers to write explanations for their examples is an ineffective stand-alone strategy for boosting NLU example difficulty. However, we find that training crowdworkers, and then using an iterative process of collecting data, sending feedback, and qualifying workers based on expert judgments is an effective means of collecting challenging data. But using crowdsourced, instead of expert judgments, to qualify workers and send feedback does not prove to be effective. We observe that the data from the iterative protocol with expert assessments is more challenging by several measures. Notably, the human{--}model gap on the unanimous agreement portion of this data is, on average, twice as large as the gap for the baseline protocol data."
+}
+
+@inproceedings{shinoda-etal-2021-improving,
+    title = "Improving the Robustness of {QA} Models to Challenge Sets with Variational Question-Answer Pair Generation",
+    author = "Shinoda, Kazutoshi  and
+      Sugawara, Saku  and
+      Aizawa, Akiko",
+    editor = "Kabbara, Jad  and
+      Lin, Haitao  and
+      Paullada, Amandalynne  and
+      Vamvas, Jannis",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: Student Research Workshop",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-srw.21/",
+    doi = "10.18653/v1/2021.acl-srw.21",
+    pages = "197--214"
+}
+
+@inproceedings{sugawara-etal-2021-benchmarking,
+    title = "Benchmarking Machine Reading Comprehension: A Psychological Perspective",
+    author = "Sugawara, Saku  and
+      Stenetorp, Pontus  and
+      Aizawa, Akiko",
+    editor = "Merlo, Paola  and
+      Tiedemann, Jorg  and
+      Tsarfaty, Reut",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eacl-main.137/",
+    doi = "10.18653/v1/2021.eacl-main.137",
+    pages = "1592--1612"
+}
+
+@inproceedings{ho-etal-2020-constructing,
+  bibtex_show = {true},
+  title       = {Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps},
+  author      = {Ho, Xanh and Duong Nguyen, Anh-Khoa and Sugawara, Saku and Aizawa, Akiko},
+  booktitle   = {Proceedings of the 28th International Conference on Computational Linguistics},
+  month       = dec,
+  year        = {2020},
+  address     = {Barcelona, Spain (Online)},
+  publisher   = {International Committee on Computational Linguistics},
+  url         = {https://aclanthology.org/2020.coling-main.580/},
+  doi         = {10.18653/v1/2020.coling-main.580},
+  pages       = {6609--6625},
+  abstract    = {A multi-hop question answering (QA) dataset aims to test reasoning and inference skills by requiring a model to read multiple paragraphs to answer a given question. However, current datasets do not provide a complete explanation for the reasoning process from the question to the answer. Further, previous studies revealed that many examples in existing multi-hop datasets do not require multi-hop reasoning to answer a question. In this study, we present a new multi-hop QA dataset, called 2WikiMultiHopQA, which uses structured and unstructured data. In our dataset, we introduce the evidence information containing a reasoning path for multi-hop questions. The evidence information has two benefits: (i) providing a comprehensive explanation for predictions and (ii) evaluating the reasoning skills of a model. We carefully design a pipeline and a set of templates when generating a question-answer pair that guarantees the multi-hop steps and the quality of the questions. We also exploit the structured format in Wikidata and use logical rules to create questions that are natural but still require multi-hop reasoning. Through experiments, we demonstrate that our dataset is challenging for multi-hop models and it ensures that multi-hop reasoning is required.},
+  abbr        = {COLING}
+}
+
+@inproceedings{ho-etal-2020-constructing,
+    title = "Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps",
     author = "Ho, Xanh  and
       Duong Nguyen, Anh-Khoa  and
       Sugawara, Saku  and
       Aizawa, Akiko",
-    editor = "Vlachos, Andreas  and
-      Augenstein, Isabelle",
-    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
-    month = may,
-    year = "2023",
-    address = "Dubrovnik, Croatia",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.findings-eacl.87/",
-    doi = "10.18653/v1/2023.findings-eacl.87",
-    pages = "1163--1180",
-    abstract = "To explain the predicted answers and evaluate the reasoning abilities of models, several studies have utilized underlying reasoning (UR) tasks in multi-hop question answering (QA) datasets. However, it remains an open question as to how effective UR tasks are for the QA task when training models on both tasks in an end-to-end manner. In this study, we address this question by analyzing the effectiveness of UR tasks (including both sentence-level and entity-level tasks) in three aspects: (1) QA performance, (2) reasoning shortcuts, and (3) robustness. While the previous models have not been explicitly trained on an entity-level reasoning prediction task, we build a multi-task model that performs three tasks together: sentence-level supporting facts prediction, entity-level reasoning prediction, and answer prediction. Experimental results on 2WikiMultiHopQA and HotpotQA-small datasets reveal that (1) UR tasks can improve QA performance. Using four debiased datasets that are newly created, we demonstrate that (2) UR tasks are helpful in preventing reasoning shortcuts in the multi-hop QA task. However, we find that (3) UR tasks do not contribute to improving the robustness of the model on adversarial questions, such as sub-questions and inverted questions. We encourage future studies to investigate the effectiveness of entity-level reasoning in the form of natural language questions (e.g., sub-question forms)."
+    editor = "Scott, Donia  and
+      Bel, Nuria  and
+      Zong, Chengqing",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-main.580/",
+    doi = "10.18653/v1/2020.coling-main.580",
+    pages = "6609--6625"
 }
 
-@inproceedings{sugawara-tsugita-2023-degrees,
-    title = "On Degrees of Freedom in Defining and Testing Natural Language Understanding",
+@inproceedings{DBLP:conf/aaai/SugawaraSIA20,
+  author       = {Saku Sugawara and
+                  Pontus Stenetorp and
+                  Kentaro Inui and
+                  Akiko Aizawa},
+  title        = {Assessing the Benchmarking Capacity of Machine Reading Comprehension
+                  Datasets},
+  booktitle    = {{AAAI}},
+  pages        = {8918--8927},
+  publisher    = {{AAAI} Press},
+  year         = {2020}
+}
+
+@inproceedings{sugawara-etal-2018-makes,
+  bibtex_show = {true},
+  title = {What Makes Reading Comprehension Questions Easier?},
+  author = {Sugawara, Saku  and Inui, Kentaro  and Sekine, Satoshi  and Aizawa, Akiko},
+  editor = {Riloff, Ellen  and Chiang, David  and Hockenmaier, Julia  and Tsujii, Jun{'}ichi},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
+  month = oct # "-" # nov,
+  year = {2018},
+  address = {Brussels, Belgium},
+  publisher = {Association for Computational Linguistics},
+  url = {https://aclanthology.org/D18-1453/},
+  doi = {10.18653/v1/D18-1453},
+  pages = {4208--4219},
+  abstract = {A challenge in creating a dataset for machine reading comprehension (MRC) is to collect questions that require a sophisticated understanding of language to answer beyond using superficial cues. In this work, we investigate what makes questions easier across recent 12 MRC datasets with three question styles (answer extraction, description, and multiple choice). We propose to employ simple heuristics to split each dataset into easy and hard subsets and examine the performance of two baseline models for each of the subsets. We then manually annotate questions sampled from each subset with both validity and requisite reasoning skills to investigate which skills explain the difference between easy and hard questions. From this study, we observed that (i) the baseline performances for the hard subsets remarkably degrade compared to those of entire datasets, (ii) hard questions require knowledge inference and multiple-sentence reasoning in comparison with easy questions, and (iii) multiple-choice questions tend to require a broader range of reasoning skills than answer extraction and description questions. These results suggest that one might overestimate recent advances in MRC.}
+}
+
+@inproceedings{sugawara-etal-2017-evaluation,
+    title = "Evaluation Metrics for Machine Reading Comprehension: Prerequisite Skills and Readability",
     author = "Sugawara, Saku  and
-      Tsugita, Shun",
-    editor = "Rogers, Anna  and
-      Boyd-Graber, Jordan  and
-      Okazaki, Naoaki",
-    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
-    month = jul,
-    year = "2023",
-    address = "Toronto, Canada",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.findings-acl.861/",
-    doi = "10.18653/v1/2023.findings-acl.861",
-    pages = "13625--13649",
-    abstract = "Natural language understanding (NLU) studies often exaggerate or underestimate the capabilities of systems, thereby limiting the reproducibility of their findings. These erroneous evaluations can be attributed to the difficulty of defining and testing NLU adequately. In this position paper, we reconsider this challenge by identifying two types of researcher degrees of freedom. We revisit Turing{'}s original interpretation of the Turing test and reveal that an effective test of NLU does not provide an operational definition; it merely provides inductive evidence that the test subject understands the language sufficiently well to meet stakeholder objectives. In other words, stakeholders are free to arbitrarily define NLU through their objectives. To use the test results as inductive evidence, stakeholders must carefully assess if the interpretation of test scores is valid or not. However, designing and using NLU tests involve other degrees of freedom, such as specifying target skills and defining evaluation metrics. As a result, achieving consensus among stakeholders becomes difficult. To resolve this issue, we propose a validity argument, which is a framework comprising a series of validation criteria across test components. By demonstrating that current practices in NLU studies can be associated with those criteria and organizing them into a comprehensive checklist, we prove that the validity argument can serve as a coherent guideline for designing credible test sets and facilitating scientific communication."
-}
-
-@inproceedings{kondo-etal-2023-probing,
-    title = "Probing Physical Reasoning with Counter-Commonsense Context",
-    author = "Kondo, Kazushi  and
-      Sugawara, Saku  and
+      Kido, Yusuke  and
+      Yokono, Hikaru  and
       Aizawa, Akiko",
-    editor = "Rogers, Anna  and
-      Boyd-Graber, Jordan  and
-      Okazaki, Naoaki",
-    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    editor = "Barzilay, Regina  and
+      Kan, Min-Yen",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     month = jul,
-    year = "2023",
-    address = "Toronto, Canada",
+    year = "2017",
+    address = "Vancouver, Canada",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.acl-short.53/",
-    doi = "10.18653/v1/2023.acl-short.53",
-    pages = "603--612",
-    abstract = "In this study, we create a CConS (Counter-commonsense Contextual Size comparison) dataset to investigate how physical commonsense affects the contextualized size comparison task; the proposed dataset consists of both contexts that fit physical commonsense and those that do not. This dataset tests the ability of language models to predict the size relationship between objects under various contexts generated from our curated noun list and templates. We measure the ability of several masked language models and encoder-decoder models. The results show that while large language models can use prepositions such as ``in'' and ``into'' in the provided context to infer size relationships, they fail to use verbs and thus make incorrect judgments led by their prior physical commonsense."
+    url = "https://aclanthology.org/P17-1075/",
+    doi = "10.18653/v1/P17-1075",
+    pages = "806--817",
+    abstract = "Knowing the quality of reading comprehension (RC) datasets is important for the development of natural-language understanding systems. In this study, two classes of metrics were adopted for evaluating RC datasets: prerequisite skills and readability. We applied these classes to six existing datasets, including MCTest and SQuAD, and highlighted the characteristics of the datasets according to each metric and the correlation between the two classes. Our dataset analysis suggests that the readability of RC datasets does not directly affect the question difficulty and that it is possible to create an RC dataset that is easy to read but difficult to answer."
 }
 
-@inproceedings{asami-sugawara-2023-propres,
-    title = "{PROPRES}: Investigating the Projectivity of Presupposition with Various Triggers and Environments",
-    author = "Asami, Daiki  and
-      Sugawara, Saku",
-    editor = "Jiang, Jing  and
-      Reitter, David  and
-      Deng, Shumin",
-    booktitle = "Proceedings of the 27th Conference on Computational Natural Language Learning (CoNLL)",
+@article{Sugawara_Yokono_Aizawa_2017, title={Prerequisite Skills for Reading Comprehension: Multi-Perspective Analysis of MCTest Datasets and Systems}, volume={31}, url={https://ojs.aaai.org/index.php/AAAI/article/view/10957}, DOI={10.1609/aaai.v31i1.10957}, abstract={One of the main goals of natural language processing (NLP) is synthetic understanding of natural language documents, especially reading comprehension (RC). An obstacle to the further development of RC systems is the absence of a synthetic methodology to analyze their performance. It is difficult to examine the performance of systems based solely on their results for tasks because the process of natural language understanding is complex. In order to tackle this problem, we propose in this paper a methodology inspired by unit testing in software engineering that enables the examination of RC systems from multiple aspects. Our methodology consists of three steps. First, we define a set of prerequisite skills for RC based on existing NLP tasks. We assume that RC capability can be divided into these skills. Second, we manually annotate a dataset for an RC task with information regarding the skills needed to answer each question. Finally, we analyze the performance of RC systems for each skill based on the annotation. The last two steps highlight two aspects: the characteristics of the dataset, and the weaknesses in and differences among RC systems. We tested the effectiveness of our methodology by annotating the Machine Comprehension Test (MCTest) dataset and analyzing four existing systems (including a neural system) on it. The results of the annotations showed that answering questions requires a combination of skills, and clarified the kinds of capabilities that systems need to understand natural language. We conclude that the set of prerequisite skills we define are promising for the decomposition and analysis of RC.}, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Sugawara, Saku and Yokono, Hikaru and Aizawa, Akiko}, year={2017}, month={Feb.} }
+
+@inproceedings{kaneko-etal-2016-annotation,
+    title = "Annotation and Analysis of Discourse Relations, Temporal Relations and Multi-Layered Situational Relations in {J}apanese Texts",
+    author = "Kaneko, Kimi  and
+      Sugawara, Saku  and
+      Mineshima, Koji  and
+      Bekki, Daisuke",
+    editor = "Hasida, Koiti  and
+      Wong, Kam-Fai  and
+      Calzorari, Nicoletta  and
+      Choi, Key-Sun",
+    booktitle = "Proceedings of the 12th Workshop on {A}sian Language Resources ({ALR}12)",
     month = dec,
-    year = "2023",
-    address = "Singapore",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.conll-1.9/",
-    doi = "10.18653/v1/2023.conll-1.9",
-    pages = "122--137",
-    abstract = "What makes a presupposition of an utterance {---}information taken for granted by its speaker{---} different from other pragmatic inferences such as an entailment is projectivity (e.g., the negative sentence the boy did not stop shedding tears presupposes the boy had shed tears before). The projectivity may vary depending on the combination of presupposition triggers and environments. However, prior natural language understanding studies fail to take it into account as they either use no human baseline or include only negation as an entailment-canceling environment to evaluate models' performance. The current study attempts to reconcile these issues. We introduce a new dataset, projectivity of presupposition (PROPRES), which includes 12k premise{--}hypothesis pairs crossing six triggers involving some lexical variety with five environments. Our human evaluation reveals that humans exhibit variable projectivity in some cases. However, the model evaluation shows that the best-performed model, DeBERTa, does not fully capture it. Our findings suggest that probing studies on pragmatic inferences should take extra care of the human judgment variability and the combination of linguistic items."
+    year = "2016",
+    address = "Osaka, Japan",
+    publisher = "The COLING 2016 Organizing Committee",
+    url = "https://aclanthology.org/W16-5402/",
+    pages = "10--19"
 }
 
-@inproceedings{kawabata-sugawara-2023-evaluating,
-    title = "Evaluating the Rationale Understanding of Critical Reasoning in Logical Reading Comprehension",
-    author = "Kawabata, Akira  and
-      Sugawara, Saku",
-    editor = "Bouamor, Houda  and
-      Pino, Juan  and
-      Bali, Kalika",
-    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
-    month = dec,
-    year = "2023",
-    address = "Singapore",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.emnlp-main.9/",
-    doi = "10.18653/v1/2023.emnlp-main.9",
-    pages = "116--143",
-    abstract = "To precisely evaluate a language model{'}s capability for logical reading comprehension, we present a dataset for testing the understanding of the rationale behind critical reasoning. For questions taken from an existing multiple-choice logical reading comprehension dataset, we crowdsource rationale texts that explain why we should select or eliminate answer options, resulting in 3,003 multiple-choice subquestions that are associated with 943 main questions. Experiments on our dataset show that recent large language models (e.g., InstructGPT) struggle to answer the subquestions even if they are able to answer the main questions correctly. We find that the models perform particularly poorly in answering subquestions written for the incorrect options of the main questions, implying that the models have a limited capability for explaining why incorrect alternatives should be eliminated. These results suggest that our dataset encourages further investigation into the critical reasoning ability of language models while focusing on the elimination process of relevant alternatives."
-}
-
-@InProceedings{FURUHASHI2024AUT,
-author    = {Furuhashi, M. and Funayama, H. and Iwase, Y. and Matsubayashi, Y. and Isobe, Y. and Nagahama, T. and Sugawara, S. and Inui, K.},
-title     = {AUTOMATIC FEEDBACK GENERATION FOR SHORT ANSWER QUESTIONS USING ANSWER DIAGNOSTIC GRAPHS},
-series    = {16th International Conference on Education and New Learning Technologies},
-booktitle = {EDULEARN24 Proceedings},
-isbn      = {978-84-09-62938-1},
-issn      = {2340-1117},
-doi       = {10.21125/edulearn.2024.1590},
-url       = {https://doi.org/10.21125/edulearn.2024.1590},
-publisher = {IATED},
-location  = {Palma, Spain},
-month     = {1-3 July, 2024},
-year      = {2024},
-pages     = {6706-6716}}
-
-@inproceedings{haga-etal-2024-modeling,
-    title = "Modeling Overregularization in Children with Small Language Models",
-    author = "Haga, Akari  and
-      Sugawara, Saku  and
-      Fukatsu, Akiyo  and
-      Oba, Miyu  and
-      Ouchi, Hiroki  and
-      Watanabe, Taro  and
-      Oseki, Yohei",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
-    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
-    month = aug,
-    year = "2024",
-    address = "Bangkok, Thailand",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.findings-acl.865/",
-    doi = "10.18653/v1/2024.findings-acl.865",
-    pages = "14532--14550",
-    abstract = "The imitation of the children{'}s language acquisition process has been explored to make language models (LMs) more efficient.In particular, errors caused by children{'}s regularization (so-called overregularization, e.g., using wroted for the past tense of write) have been widely studied to reveal the mechanisms of language acquisition. Existing research has analyzed regularization in language acquisition only by modeling word inflection directly, which is unnatural in light of human language acquisition. In this paper, we hypothesize that language models that imitate the errors children make during language acquisition have a learning process more similar to humans. To verify this hypothesis, we analyzed the learning curve and error preferences of verb inflections in small-scale LMs using acceptability judgments. We analyze the differences in results by model architecture, data, and tokenization. Our model shows child-like U-shaped learning curves clearly for certain verbs, but the preferences for types of overgeneralization did not fully match the observations in children."
-}
-
-@inproceedings{asami-sugawara-2024-makes,
-    title = "What Makes Language Models Good-enough?",
-    author = "Asami, Daiki  and
-      Sugawara, Saku",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
-    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
-    month = aug,
-    year = "2024",
-    address = "Bangkok, Thailand",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.findings-acl.913/",
-    doi = "10.18653/v1/2024.findings-acl.913",
-    pages = "15453--15467",
-    abstract = "Psycholinguistic research suggests that humans may build a representation of linguistic input that is `good-enough' for the task at hand. This study examines what architectural features make language models learn human-like good-enough language processing. We focus on the number of layers and self-attention heads in Transformers. We create a good-enough language processing (GELP) evaluation dataset (7,680 examples), which is designed to test the effects of two plausibility types, eight construction types, and three degrees of memory cost on language processing. To annotate GELP, we first conduct a crowdsourcing experiment whose design follows prior psycholinguistic studies. Our model evaluation against the annotated GELP then reveals that the full model as well as models with fewer layers and/or self-attention heads exhibit a good-enough performance. This result suggests that models with shallower depth and fewer heads can learn good-enough language processing."
-}
-
-@inproceedings{kawabata-sugawara-2024-rationale,
-    title = "Rationale-Aware Answer Verification by Pairwise Self-Evaluation",
-    author = "Kawabata, Akira  and
-      Sugawara, Saku",
-    editor = "Al-Onaizan, Yaser  and
-      Bansal, Mohit  and
-      Chen, Yun-Nung",
-    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2024",
-    address = "Miami, Florida, USA",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.emnlp-main.905/",
-    doi = "10.18653/v1/2024.emnlp-main.905",
-    pages = "16178--16196",
-    abstract = "Answer verification identifies correct solutions among candidates generated by large language models (LLMs). Current approaches typically train verifier models by labeling solutions as correct or incorrect based solely on whether the final answer matches the gold answer. However, this approach neglects any flawed rationale in the solution yielding the correct answer, undermining the verifier{'}s ability to distinguish between sound and flawed rationales. We empirically show that in StrategyQA, only 19{\%} of LLM-generated solutions with correct answers have valid rationales, thus leading to an unreliable verifier. Furthermore, we demonstrate that training a verifier on valid rationales significantly improves its ability to distinguish valid and flawed rationale. To make a better verifier without extra human supervision, we introduce REPS (Rationale Enhancement through Pairwise Selection), a method for selecting valid rationales from candidates by iteratively applying pairwise self-evaluation using the same LLM that generates the solutions. Verifiers trained on solutions selected by REPS outperform those trained using conventional training methods on three reasoning benchmarks (ARC-Challenge, DROP, and StrategyQA). Our results suggest that training reliable verifiers requires ensuring the validity of rationales in addition to the correctness of the final answers, which would be critical for models assisting humans in solving complex reasoning tasks."
-}
-
-@inproceedings{oba-etal-2024-language,
-    title = "Can Language Models Induce Grammatical Knowledge from Indirect Evidence?",
-    author = "Oba, Miyu  and
-      Oseki, Yohei  and
-      Fukatsu, Akiyo  and
-      Haga, Akari  and
-      Ouchi, Hiroki  and
-      Watanabe, Taro  and
-      Sugawara, Saku",
-    editor = "Al-Onaizan, Yaser  and
-      Bansal, Mohit  and
-      Chen, Yun-Nung",
-    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2024",
-    address = "Miami, Florida, USA",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.emnlp-main.1146/",
-    doi = "10.18653/v1/2024.emnlp-main.1146",
-    pages = "20591--20603",
-    abstract = "What kinds of and how much data is necessary for language models to induce grammatical knowledge to judge sentence acceptability? Recent language models still have much room for improvement in their data efficiency compared to humans. This paper investigates whether language models efficiently use indirect data (indirect evidence), from which they infer sentence acceptability. In contrast, humans use indirect evidence efficiently, which is considered one of the inductive biases contributing to efficient language acquisition. To explore this question, we introduce the Wug InDirect Evidence Test (WIDET), a dataset consisting of training instances inserted into the pre-training data and evaluation instances. We inject synthetic instances with newly coined wug words into pretraining data and explore the model{'}s behavior on evaluation data that assesses grammatical acceptability regarding those words. We prepare the injected instances by varying their levels of indirectness and quantity. Our experiments surprisingly show that language models do not induce grammatical knowledge even after repeated exposure to instances with the same structure but differing only in lexical items from evaluation instances in certain language phenomena. Our findings suggest a potential direction for future research: developing models that use latent indirect evidence to induce grammatical knowledge."
-}
-
-@inproceedings{sakamoto-etal-2025-development,
-    title = "Development of Numerical Error Detection Tasks to Analyze the Numerical Capabilities of Language Models",
-    author = "Sakamoto, Taku  and
-      Sugawara, Saku  and
+@inproceedings{sugawara-aizawa-2016-analysis,
+    title = "An Analysis of Prerequisite Skills for Reading Comprehension",
+    author = "Sugawara, Saku  and
       Aizawa, Akiko",
-    editor = "Rambow, Owen  and
-      Wanner, Leo  and
-      Apidianaki, Marianna  and
-      Al-Khalifa, Hend  and
-      Eugenio, Barbara Di  and
-      Schockaert, Steven",
-    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
-    month = jan,
-    year = "2025",
-    address = "Abu Dhabi, UAE",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.coling-main.666/",
-    pages = "9957--9976",
-    abstract = "Numbers are used to describe quantities in various scenarios in daily life; therefore, numerical errors can significantly affect the meaning of the entire sentence, and even a single-letter error can be fatal. Detecting numerical errors often requires a high level of commonsense and is difficult even with the recent large language models (LLMs). In this study, we create a benchmark dataset of numerical error detection that uses automatically generated numerical errors. In our analysis, we classify the numerical errors based on the properties of the errors and investigate the ability of the model from several perspectives, including the error class, error size, and passage domain. The experimental results indicate that GPT-3.5, GPT-4, and Llama-3-Instruct (8B) perform well in the numerical error detection task; however, they are not as accurate as humans. We find that the LLMs misidentified correct numbers as errors more frequently than the humans did. In particular, the analysis demonstrates that the current LLMs still need improvement for detecting numerical errors requiring calculations or extensive prior knowledge."
-}
-
-@inproceedings{takizawa-etal-2025-mcqformatbench,
-    title = "{MCQF}ormat{B}ench: Robustness Tests for Multiple-Choice Questions",
-    author = "Takizawa, Hiroo  and
-      Sugawara, Saku  and
-      Aizawa, Akiko",
-    editor = "Arviv, Ofir  and
-      Clinciu, Miruna  and
-      Dhole, Kaustubh  and
-      Dror, Rotem  and
-      Gehrmann, Sebastian  and
-      Habba, Eliya  and
-      Itzhak, Itay  and
-      Mille, Simon  and
-      Perlitz, Yotam  and
-      Santus, Enrico  and
-      Sedoc, Jo{\~a}o  and
-      Shmueli Scheuer, Michal  and
-      Stanovsky, Gabriel  and
-      Tafjord, Oyvind",
-    booktitle = "Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM{\texttwosuperior})",
-    month = jul,
-    year = "2025",
-    address = "Vienna, Austria and virtual meeting",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.gem-1.69/",
-    pages = "824--846",
-    ISBN = "979-8-89176-261-9",
-    abstract = "Multiple-choice questions (MCQs) are often used to evaluate large language models (LLMs). They measure LLMs' general common sense and reasoning abilities, as well as their knowledge in specific domains such as law and medicine. However, the robustness of LLMs to various question formats in MCQs has not been thoroughly evaluated. While there are studies on the sensitivity of LLMs to input variations, research into their responsiveness to different question formats is still limited. In this study, we propose a method to construct tasks to comprehensively evaluate the robustness against format changes of MCQs by decomposing the answering process into several steps. Using this dataset, we evaluate nine LLMs, such as Llama3-70B and Mixtral-8x7B. We find the lack of robustness to differences in the format of MCQs. It is crucial to consider whether the format of MCQs influences their evaluation scores when assessing LLMs using MCQ datasets."
-}
-
-@inproceedings{10.1145/3746027.3755623,
-author = {Waseda, Futa and Sugawara, Saku and Echizen, Isao},
-title = {Quality Text, Robust Vision: The Role of Language in Enhancing Visual Robustness of Vision-Language Models},
-year = {2025},
-isbn = {9798400720352},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3746027.3755623},
-doi = {10.1145/3746027.3755623},
-abstract = {Defending pre-trained vision-language models (VLMs), such as CLIP, against adversarial attacks is crucial, as these models are widely used in diverse zero-shot tasks, including image classification. However, existing adversarial training (AT) methods for robust fine-tuning largely overlook the role of language in enhancing visual robustness. Specifically, (1) supervised AT methods rely on short texts (e.g., class labels) to generate adversarial perturbations, leading to overfitting to object classes in the training data, and (2) unsupervised AT avoids this overfitting but remains suboptimal against practical text-guided adversarial attacks due to its lack of semantic guidance. To address these limitations, we propose Quality Text-guided Adversarial Fine-Tuning (QT-AFT), which leverages high-quality captions during training to guide adversarial examples away from diverse semantics present in images. This enables the visual encoder to robustly recognize a broader range of image features even under adversarial noise, thereby enhancing robustness across diverse downstream tasks. QT-AFT overcomes the key weaknesses of prior methods---overfitting in supervised AT and lack of semantic awareness in unsupervised AT---achieving state-of-the-art zero-shot adversarial robustness and clean accuracy, evaluated across 16 zero-shot datasets. Furthermore, our comprehensive study uncovers several key insights into the role of language in enhancing vision robustness; for example, describing object properties in addition to object names further enhances zero-shot robustness. Our findings point to an urgent direction for future work---centering high-quality linguistic supervision in robust visual representation learning.},
-booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
-pages = {4808–4816},
-numpages = {9},
-keywords = {adversarial defense, adversarial robustness, vision-language models, zero-shot image recognition},
-location = {Dublin, Ireland},
-series = {MM '25}
-}
-
-@inproceedings{liu-etal-2025-tactfultom,
-    title = "{T}actful{T}o{M}: Do {LLM}s have the Theory of Mind ability to understand White Lies?",
-    author = "Liu, Yiwei  and
-      Pretty, Emma Jane  and
-      Huang, Jiahao  and
-      Sugawara, Saku",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
-    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    editor = "Louis, Annie  and
+      Roth, Michael  and
+      Webber, Bonnie  and
+      White, Michael  and
+      Zettlemoyer, Luke",
+    booktitle = "Proceedings of the Workshop on Uphill Battles in Language Processing: Scaling Early Achievements to Robust Methods",
     month = nov,
-    year = "2025",
-    address = "Suzhou, China",
+    year = "2016",
+    address = "Austin, TX",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.emnlp-main.1272/",
-    doi = "10.18653/v1/2025.emnlp-main.1272",
-    pages = "25043--25061",
-    ISBN = "979-8-89176-332-6",
-    abstract = "While recent studies explore Large Language Models' (LLMs) performance on Theory of Mind (ToM) reasoning tasks, research on ToM abilities that require more nuanced social context is limited, such as white lies. We introduce TactfulToM, a novel English benchmark designed to evaluate LLMs' ability to understand white lies within real-life conversations and reason about prosocial motivations behind them, particularly when they are used to spare others' feelings and maintain social harmony. Our benchmark is generated through a multi-stage human-in-the-loop pipeline where LLMs expand manually designed seed stories into conversations to maintain the information asymmetry between participants necessary for authentic white lies. We show that TactfulToM is challenging for state-of-the-art models, which perform substantially below humans, revealing shortcomings in their ability to fully comprehend the ToM reasoning that enables true understanding of white lies."
+    url = "https://aclanthology.org/W16-6001/",
+    doi = "10.18653/v1/W16-6001",
+    pages = "1--5"
 }
-
-@inproceedings{furuhashi-etal-2025-checklists,
-    title = "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
-    author = "Furuhashi, Momoka  and
-      Nakayama, Kouta  and
-      Kodama, Takashi  and
-      Sugawara, Saku",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
-    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.emnlp-main.538/",
-    doi = "10.18653/v1/2025.emnlp-main.538",
-    pages = "10630--10653",
-    ISBN = "979-8-89176-332-6",
-    abstract = "Automatic evaluation of generative tasks using large language models faces challenges due to ambiguous criteria. Although automatic checklist generation is a potentially promising approach, its usefulness remains underexplored.We investigate whether checklists should be used for all questions or selectively, generate them using six methods, evaluate their effectiveness across eight model sizes, and identify checklist items that correlate with human evaluations.Through experiments on pairwise comparison and direct scoring tasks, we find that selective checklist use tends to improve evaluation performance in pairwise settings, while its benefits are less consistent in direct scoring.Our analysis also shows that even checklist items with low correlation to human scores often reflect human-written criteria, indicating potential inconsistencies in human evaluation. These findings highlight the need to more clearly define objective evaluation criteria to guide both human and automatic evaluations.Our code is available at https://github.com/momo0817/checklist-effectiveness-study."
-}
-
-@inproceedings{kayano-sugawara-2025-specification,
-    title = "Specification-Aware Machine Translation and Evaluation for Purpose Alignment",
-    author = "Kayano, Yoko  and
-      Sugawara, Saku",
-    editor = "Haddow, Barry  and
-      Kocmi, Tom  and
-      Koehn, Philipp  and
-      Monz, Christof",
-    booktitle = "Proceedings of the Tenth Conference on Machine Translation",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.wmt-1.7/",
-    doi = "10.18653/v1/2025.wmt-1.7",
-    pages = "113--141",
-    ISBN = "979-8-89176-341-8",
-    abstract = "In professional settings, translation is guided by communicative goals and client needs, often formalized as specifications.While existing evaluation frameworks acknowledge the importance of such specifications, these specifications are often treated only implicitly in machine translation (MT) research.Drawing on translation studies, we provide a theoretical rationale for why specifications matter in professional translation, as well as a practical guide to implementing specification-aware MT and evaluation.Building on this foundation, we apply our framework to the translation of investor relations texts from 33 publicly listed companies.In our experiment, we compare five translation types, including official human translations and prompt-based outputs from large language models (LLMs), using expert error analysis, user preference rankings, and an automatic metric. The results show that LLM translations guided by specifications consistently outperformed official human translations in human evaluations, highlighting a gap between perceived and expected quality.These findings demonstrate that integrating specifications into MT workflows, with human oversight, can improve translation quality in ways aligned with professional practice."
-}
-
-
-
