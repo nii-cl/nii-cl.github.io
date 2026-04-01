@@ -532,15 +532,15 @@ ninja.data = [{
           description: "",
           section: "Members",handler: () => {
               window.location.href = "/members/yoko-kayano/";
-            },},{id: "news-we-welcome-3-new-students",
-          title: 'We welcome 3 new students',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/20260401_new_students/";
             },},{id: "news-our-website-is-up-and-running",
           title: 'Our website is up and running!',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-we-welcome-three-new-students",
+          title: 'We welcome three new students',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20260401_new_students/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
