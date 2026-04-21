@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best Presentation Award at the 1st AAMT Translation & Interpretation Research Workshop"
-date: 2026-04-22 00:00:01-0000
+date: 2026-04-21 00:00:01-0000
 inline: false
 related_posts: false
 ---
