@@ -1,0 +1,17 @@
+name: 📄 論文を追加する
+description: publications ページに arXiv 論文を追加する（自動でPRが作成されます）
+title: "[Paper] "
+labels: ["add_arxiv_paper"]
+body:
+  - type: input
+    id: arxiv_url
+    attributes:
+      label: arXiv URL または ID
+      description: "例: https://arxiv.org/abs/2604.20166 または 2604.20166"
+      placeholder: "https://arxiv.org/abs/XXXX.XXXXX"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        > このIssueを作成すると、arXiv から書誌情報を自動取得し、`papers.bib` への追記PRが自動作成されます。

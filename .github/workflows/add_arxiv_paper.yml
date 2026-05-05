@@ -1,0 +1,83 @@
+name: Add Paper from Issue
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  add-paper:
+    if: contains(github.event.issue.labels.*.name, 'add_arxiv_paper')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Generate BibTeX and update papers.bib
+        id: process
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          BIB_PATH: _bibliography/papers.bib
+        run: python .github/scripts/add_arxiv_paper.py
+
+      - name: Create branch, commit, and open PR
+        if: steps.process.outputs.success == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARXIV_ID="${{ steps.process.outputs.arxiv_id }}"
+          TITLE="${{ steps.process.outputs.title }}"
+          BRANCH="add-paper/arxiv-${ARXIV_ID}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add _bibliography/papers.bib
+          git commit -m "Add preprint: ${TITLE}"
+          git push origin "$BRANCH"
+
+          PR_URL=$(gh pr create \
+            --title "Add preprint: ${TITLE}" \
+            --body "$(cat <<EOF
+          Closes #${{ github.event.issue.number }}
+
+          - arXiv: https://arxiv.org/abs/${ARXIV_ID}
+          - BibTeX key: \`${{ steps.process.outputs.key }}\`
+          EOF
+          )" \
+            --base main)
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Comment on issue (success)
+        if: steps.process.outputs.success == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: ${{ github.event.issue.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✅ PRを作成しました: ${{ steps.pr.outputs.pr_url }}\n\nBibTeX key: \`${{ steps.process.outputs.key }}\``
+            })
+
+      - name: Comment on issue (failure)
+        if: failure() || steps.process.outputs.success == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: ${{ github.event.issue.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `❌ 処理に失敗しました。\n\nエラー: \`${{ steps.process.outputs.error }}\`\n\narXiv URLを確認して、Issueを再度作成してください。`
+            })
