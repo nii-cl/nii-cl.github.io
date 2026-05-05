@@ -8,7 +8,7 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
-ATOM_NS = "http://www.w3.org/2005/Atom"
+ATOM_NS = "https://www.w3.org/2005/Atom"
 MONTHS = ["jan", "feb", "mar", "apr", "may", "jun",
           "jul", "aug", "sep", "oct", "nov", "dec"]
 
@@ -21,7 +21,7 @@ def extract_arxiv_id(text: str) -> str:
 
 
 def fetch_metadata(arxiv_id: str) -> dict:
-    url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}"
+    url = f"https://export.arxiv.org/api/query?id_list={arxiv_id}"
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
 
