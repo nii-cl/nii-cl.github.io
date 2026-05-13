@@ -1,5 +1,5 @@
 ---
 name: "Sijing Qin"
 institute: "Hitotsubashi University"
-role: "collaborator"
+role: "research_assistant"
 ---

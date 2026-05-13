@@ -2,7 +2,7 @@
 layout: page
 permalink: /join/
 title: Joining the Group
-nav_title: join
+nav_title: Join
 description: Information for prospective members of Sugawara Group at National Institute of Informatics.
 nav: true
 nav_order: 5

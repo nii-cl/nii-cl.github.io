@@ -2,7 +2,7 @@
 layout: page
 permalink: /seminars/
 title: Seminars
-nav_title: seminars
+nav_title: Seminars
 description: Lab seminar and reading group history.
 nav: true
 nav_order: 4
