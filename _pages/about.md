@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: Home
 about_title: Sugawara Group
 compact_title: true
 permalink: /
