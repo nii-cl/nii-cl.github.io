@@ -16,18 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-node@v4
         with:
-          python-version: "3.12"
-
-      - run: pip install requests
+          node-version: "20"
 
       - name: Generate BibTeX and update papers.bib
         id: process
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           BIB_PATH: _bibliography/papers.bib
-        run: python .github/scripts/add_arxiv_paper.py
+        run: node .github/scripts/add_arxiv_paper.js
 
       - name: Create branch, commit, and open PR
         if: steps.process.outputs.success == 'true'
