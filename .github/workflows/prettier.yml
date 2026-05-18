@@ -17,21 +17,61 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
+
       - name: Install Prettier 💾
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+
+      - name: Get changed files 📂
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git diff --name-only origin/${{ github.base_ref }}...HEAD > changed_files.txt
+          else
+            BEFORE="${{ github.event.before }}"
+            if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              git show --name-only --format="" HEAD > changed_files.txt
+            else
+              git diff --name-only "$BEFORE" "${{ github.sha }}" > changed_files.txt
+            fi
+          fi
+          echo "Changed files:"
+          cat changed_files.txt
+
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        run: |
+          FAILED=0
+          while IFS= read -r file; do
+            [ -z "$file" ] || [ ! -f "$file" ] && continue
+            cp "$file" "${file}.orig"
+            npx prettier --write "$file" 2>/dev/null
+            if ! diff -q "${file}.orig" "$file" > /dev/null; then
+              while IFS= read -r hunk; do
+                LINE=$(echo "$hunk" | sed 's/@@ -\([0-9]*\).*/\1/')
+                echo "::error file=$file,line=$LINE::Prettier formatting issue"
+              done < <(diff --unified=0 "${file}.orig" "$file" | grep "^@@")
+              FAILED=1
+            fi
+            cp "${file}.orig" "$file"
+            rm -f "${file}.orig"
+          done < changed_files.txt
+          exit $FAILED
+
       - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
+          while IFS= read -r file; do
+            [ -z "$file" ] || [ ! -f "$file" ] && continue
+            npx prettier --write "$file"
+          done < changed_files.txt
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
+
       - name: Upload html diff ⬆️
         id: artifact-upload
         if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
@@ -40,6 +80,7 @@ jobs:
           name: HTML Diff
           path: diff.html
           retention-days: 7
+
       - name: Dispatch information to repository 🗣️
         if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
         uses: peter-evans/repository-dispatch@v2
