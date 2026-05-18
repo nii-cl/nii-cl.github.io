@@ -3,8 +3,7 @@
 
 const fs = require("fs");
 
-const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun",
-                "jul", "aug", "sep", "oct", "nov", "dec"];
+const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
 function extractArxivId(text) {
   const match = text.match(/(\d{4}\.\d{4,5})(?:v\d+)?/);
@@ -54,8 +53,14 @@ async function fetchMetadata(arxivId) {
 }
 
 function makeKey(meta) {
-  const last = meta.authors[0].split(",")[0].toLowerCase().replace(/[^a-z]/g, "");
-  const word = meta.title.split(/\s+/)[0].toLowerCase().replace(/[^a-z]/g, "");
+  const last = meta.authors[0]
+    .split(",")[0]
+    .toLowerCase()
+    .replace(/[^a-z]/g, "");
+  const word = meta.title
+    .split(/\s+/)[0]
+    .toLowerCase()
+    .replace(/[^a-z]/g, "");
   return `${last}${meta.year}${word}`;
 }
 
