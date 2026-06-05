@@ -1,4 +1,4 @@
 ---
-name: "Junko Inose / 猪瀬純子"
+name: "Junko Inose / 猪瀬 純子"
 role: "administrative_staff"
 ---
