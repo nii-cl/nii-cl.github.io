@@ -462,6 +462,11 @@ ninja.data = [{
           description: "",
           section: "Members",handler: () => {
               window.location.href = "/members/mana-ashida/";
+            },},{id: "members-marguerite-novikov",
+          title: 'Marguerite Novikov',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/marguerite-novikov/";
             },},{id: "members-miyu-oba",
           title: 'Miyu Oba',
           description: "",
