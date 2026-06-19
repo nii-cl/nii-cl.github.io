@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nii-cl.github.io/sitemap.xml
+Sitemap: https://cl.nii.ac.jp/sitemap.xml
