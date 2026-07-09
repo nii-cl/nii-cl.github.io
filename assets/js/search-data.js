@@ -553,8 +553,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260422_aamt_best_presentation/";
-            },},{id: "news-we-received-outstanding-paper-award-at-acl-2026",
-          title: 'We received Outstanding Paper Award at ACL 2026!',
+            },},{id: "news-our-paper-received-outstanding-paper-award-at-acl-2026",
+          title: 'Our paper received Outstanding Paper Award at ACL 2026!',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260709_ACL_award/";
