@@ -113,8 +113,11 @@
             border-color: var(--global-theme-color);
           }
         }
-        a.award.btn {
-          border-color: var(--global-highlight-color);
+        .award-text {
+          color: var(--global-highlight-color);
+          font-weight: bolder;
+          margin-left: 0.5rem;
+          align-self: center;
         }
       }
 
