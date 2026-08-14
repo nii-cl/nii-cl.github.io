@@ -122,6 +122,9 @@
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
+      {% if entry.preprint %}
+        <a href="{{ entry.preprint }}" class="btn btn-sm z-depth-0" role="button">Preprint</a>
+      {% endif %}
       {% if entry.award %}
         <span class="award-text">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
