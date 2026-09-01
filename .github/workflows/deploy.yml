@@ -81,6 +81,15 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+      - name: Setup Node 📦
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Generate papers.bib from Supabase 📚
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: node .github/scripts/supabase/generate-bib-from-supabase.mjs
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
