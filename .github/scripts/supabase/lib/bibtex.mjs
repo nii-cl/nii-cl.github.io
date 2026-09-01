@@ -85,7 +85,10 @@ export function parseBibFile(content) {
     if (at === -1) break;
     const braceOpen = body.indexOf("{", at);
     if (braceOpen === -1) break;
-    const entryType = body.slice(at + 1, braceOpen).trim().toLowerCase();
+    const entryType = body
+      .slice(at + 1, braceOpen)
+      .trim()
+      .toLowerCase();
 
     let depth = 1;
     let j = braceOpen + 1;
@@ -124,12 +127,14 @@ function parseEntry(entryType, inner) {
 function splitFields(str) {
   const parts = [];
   let depth = 0;
+  let inQuotes = false;
   let start = 0;
   for (let i = 0; i < str.length; i++) {
     const c = str[i];
-    if (c === "{") depth++;
+    if (c === '"' && depth === 0) inQuotes = !inQuotes;
+    else if (c === "{") depth++;
     else if (c === "}") depth--;
-    else if (c === "," && depth === 0) {
+    else if (c === "," && depth === 0 && !inQuotes) {
       parts.push(str.slice(start, i));
       start = i + 1;
     }
@@ -141,19 +146,27 @@ function splitFields(str) {
 
 function unwrapValue(value) {
   value = value.trim();
+  let unwrapped = value;
   if (value.startsWith("{") && value.endsWith("}")) {
     let depth = 0;
+    let fullyWrapped = true;
     for (let i = 0; i < value.length; i++) {
       if (value[i] === "{") depth++;
       else if (value[i] === "}") {
         depth--;
-        if (depth === 0 && i !== value.length - 1) return value; // 外側が完全に対応していない
+        if (depth === 0 && i !== value.length - 1) {
+          fullyWrapped = false; // 外側が完全に対応していない
+          break;
+        }
       }
     }
-    return value.slice(1, -1);
+    if (fullyWrapped) unwrapped = value.slice(1, -1);
+  } else if (value.startsWith('"') && value.endsWith('"')) {
+    unwrapped = value.slice(1, -1);
   }
-  if (value.startsWith('"') && value.endsWith('"')) return value.slice(1, -1);
-  return value; // 裸の語・数値・マクロ（例: month = oct）
+  // 元の bib ファイルではフィールドが複数行に折り返されていることがあるため、
+  // 改行・連続する空白は 1 つの半角スペースに正規化する（裸のマクロ値には影響しない）
+  return unwrapped.replace(/\s+/g, " ").trim();
 }
 
 // 解析済みエントリを Supabase `papers` テーブルの1行に変換する
@@ -211,7 +224,8 @@ export function formatBibEntry(row) {
   for (const name of orderedNames) {
     const value = fields[name];
     if (value === null || value === undefined || value === "") continue;
-    const isBareMonth = name === "month" && /^[a-z]{3,9}$/i.test(String(value));
+    // 例: "oct" のような裸のマクロ、"oct # \"-\" # nov" のような連結式はそのまま出力する
+    const isBareMonth = name === "month" && (/^[a-z]{3,9}$/i.test(String(value)) || String(value).includes("#"));
     lines.push(`  ${name} = ${isBareMonth ? value : `{${value}}`},`);
   }
   lines.push("}");

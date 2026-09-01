@@ -19,15 +19,12 @@ if (!SUPABASE_URL || !API_KEY) {
   process.exit(1);
 }
 
-const res = await fetch(
-  `${SUPABASE_URL}/rest/v1/papers?select=*&order=year.desc.nullslast,month.desc.nullslast`,
-  {
-    headers: {
-      apikey: API_KEY,
-      Authorization: `Bearer ${API_KEY}`,
-    },
+const res = await fetch(`${SUPABASE_URL}/rest/v1/papers?select=*&order=year.desc.nullslast,month.desc.nullslast`, {
+  headers: {
+    apikey: API_KEY,
+    Authorization: `Bearer ${API_KEY}`,
   },
-);
+});
 
 if (!res.ok) {
   console.error(`Supabase からの取得に失敗しました: ${res.status} ${res.statusText}`);
